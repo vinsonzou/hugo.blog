@@ -1,0 +1,13 @@
+baseurl = "http://ops.m114.org"
+languageCode = "zh-cn"
+title = "ops"
+theme = "hyde"
+
+[Taxonomies]
+    tag = "tags"
+
+[params]
+    disqus = "vinsoncou"
+    motto = "records of learning."
+
+

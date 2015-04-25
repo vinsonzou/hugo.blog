@@ -1,0 +1,21 @@
+{{ partial "head.html" . }}
+{{ partial "sidebar.html" . }}
+
+<div id="page" class="content container">
+<div style="font-style:italic; color: #ccc;" align="right">{{ .Site.Params.motto}}</div>
+<section id="main">
+  <div>
+        {{ range .Data.Pages.GroupByDate "2006" }}
+        <h2>{{ .Key }}</h3>
+            <ul id="list">
+                {{ range .Pages }}
+                    {{ .Render "li"}}
+                {{ end }}
+            </ul>
+        {{ end }}
+  </div>
+</section>
+</div>
+
+{{ partial "footer.html" . }}
+
