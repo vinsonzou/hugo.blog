@@ -48,4 +48,4 @@ AlertScriptsPath=/usr/local/zabbix/alertscripts
     #注意事项: body只能有一行内容，超过一行的内容是不会发送的。
 
 Zabbix添加Media types
-![media_Telegram](/img/media_Telegram.png)
+![media_Telegram](http://m114-static.qiniudn.com/img/media_Telegram.png)
