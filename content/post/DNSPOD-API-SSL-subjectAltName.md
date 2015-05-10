@@ -52,6 +52,8 @@ Python SSL验证
 	>>> _ssl._test_decode_cert('dnsapi.cert')
 	{'subjectAltName': (('DNS', 'www.dnsapi.cn'), ('DNS', 'monitor.dnspod.cn'), ('DNS', 'api.dnspod.com'), ('DNS', 'tickets.dnspod.com'), ('DNS', 'ec.dnspod.cn'), ('DNS', 'domains.dnspod.cn'), ('DNS', 'support.dnspod.cn'), ('DNS', 'm.dnspod.cn'), ('DNS', 'ssl.ptlogin2.dnspod.cn'), ('DNS', 'monitor.dnspod.com'), ('DNS', 'support.dnspod.com'), ('DNS', 'tickets.dnspod.cn'), ('DNS', 'statics.dnspod.cn'), ('DNS', 'stat.dnspod.cn'), ('DNS', 'www.dnspod.com'), ('DNS', 'dnspod.com'), ('DNS', 'static.dnspod.com'), ('DNS', 'libs.dnspod.cn'), ('DNS', 'blog.dnspod.cn'), ('DNS', 'dnsapi.cn'), ('DNS', 'www.dnspod.cn'), ('DNS', 'dnspod.cn')), 'notBefore': 'Mar 24 00:00:00 2015 GMT', 'serialNumber': '3E4F6D495C407163586D0B900A007555', 'notAfter': 'May 12 23:59:59 2015 GMT', 'version': 3, 'subject': ((('1.3.6.1.4.1.311.60.2.1.3', u'CN'),), (('1.3.6.1.4.1.311.60.2.1.2', u'ShanDong'),), (('1.3.6.1.4.1.311.60.2.1.1', u'YanTai'),), (('businessCategory', u'Private Organization'),), (('serialNumber', u'370635200013814'),), (('countryName', u'CN'),), (('stateOrProvinceName', u'\u5c71\u4e1c\u7701'),), (('localityName', u'\u70df\u53f0\u5e02'),), (('organizationName', u'DNSPod, Inc.'),), (('organizationalUnitName', u'IT'),), (('commonName', u'www.dnspod.cn'),)), 'issuer': ((('countryName', u'US'),), (('organizationName', u'GeoTrust Inc.'),), (('commonName', u'GeoTrust Extended Validation SSL CA - G2'),))}
 
-解决方法：`升级Python至2.7.3以上版本,低版本不支持ssl的subjectAltName特性`
+解决方法：
+
+**`升级Python至2.7.3以上版本,低版本不支持ssl的subjectAltName特性`**
 
 来源参考: https://github.com/shazow/urllib3/issues/523
