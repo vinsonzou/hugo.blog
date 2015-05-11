@@ -56,4 +56,6 @@ Python SSL验证
 
 **`升级Python至2.7.3以上版本,低版本不支持ssl的subjectAltName特性`**
 
-来源参考: https://github.com/shazow/urllib3/issues/523
+来源参考:
+
+https://github.com/shazow/urllib3/issues/523
