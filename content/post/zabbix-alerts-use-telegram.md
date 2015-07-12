@@ -49,3 +49,5 @@ AlertScriptsPath=/usr/local/zabbix/alertscripts
 
 Zabbix添加Media types
 ![media_Telegram](http://m114-static.qiniudn.com/img/media_Telegram.png)
+
+PS：Telegram已于2015年7月10日被天朝和谐。。。
