@@ -1,6 +1,5 @@
 +++
 date = "2015-06-03T23:04:55+08:00"
-menu = "main"
 tags = ["igb"]
 title = "kernel igb 00000500 0 eth0 reset adapter"
 

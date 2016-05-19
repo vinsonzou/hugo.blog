@@ -1,21 +1,16 @@
 {{ partial "head.html" . }}
+<body class="{{ .Site.Params.themeColor }}">
+
 {{ partial "sidebar.html" . }}
 
-<div id="page" class="content container">
-<div style="font-style:italic; color: #ccc;" align="right">{{ .Site.Params.motto}}</div>
-<section id="main">
-  <div>
-        {{ range .Data.Pages.GroupByDate "2006" }}
-        <h2>{{ .Key }}</h3>
-            <ul id="list">
-                {{ range .Pages }}
-                    {{ .Render "li"}}
-                {{ end }}
-            </ul>
+  <div class="content container">
+    <ul class="posts">
+        {{ range .Data.Pages }}
+        <li>
+          <span><a href="{{ .Permalink }}">{{ .Title }}</a> <time class="pull-right post-list">{{ .Date.Format "Mon, Jan 2, 2006" }}</time></span>
+        </li>
         {{ end }}
+    </ul>
   </div>
-</section>
-</div>
-
-{{ partial "footer.html" . }}
-
+</body>
+</html>

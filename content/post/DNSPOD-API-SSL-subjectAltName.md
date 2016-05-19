@@ -1,6 +1,5 @@
 +++
 date = "2015-05-10T23:44:43+08:00"
-menu = "main"
 tags = ["subjectAltName"]
 title = "DNSPOD API SSL证书调整(subjectAltName)引起的报错"
 

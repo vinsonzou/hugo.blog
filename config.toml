@@ -1,13 +1,52 @@
 baseurl = "http://ops.m114.org"
 languageCode = "zh-cn"
 title = "ops"
-theme = "hyde"
+theme = "blackburn"
 
-[Taxonomies]
-    tag = "tags"
+# Shown in the side menu
+copyright = "&copy; 2014-2016. All rights reserved."
+canonifyurls = true
+paginate = 5
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
 
 [params]
-    disqus = "vinsoncou"
-    motto = "records of learning."
+  # Shown in the home page
+  subtitle = "records of learning."
+  brand = "Ops"
+  disqus = "vinsoncou"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  dateFormat = "2006/01/02, 15:04"
 
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "Tips"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "tips"
+    url = "/tips/"
+  [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 3
+    identifier = "tag"
+    url = "/tags/"
 
+[social]
+github = "vinsonzou"

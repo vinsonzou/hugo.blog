@@ -1,6 +1,5 @@
 +++
 date = "2015-04-25T17:16:29+08:00"
-menu = "main"
 tags = ["Zabbix", "Telegram"]
 title = "Zabbix使用Telegram发送报警"
 
