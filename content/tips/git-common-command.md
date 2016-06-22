@@ -85,3 +85,13 @@ git reset c2fcb51d554021c0603cbfc8c3b5fc3427d5d9a4 tmp.txt
 #提交
 git commit -m "revert old file"
 ```
+
+### 5. 根据COMMIT生成PATCH
+
+```
+# 生成patch文件(生成的patch有统计信息和git的版本信息)
+git format-patch -1 commit版本号
+
+# 应用patch文件
+git apply xxx.patch
+```
