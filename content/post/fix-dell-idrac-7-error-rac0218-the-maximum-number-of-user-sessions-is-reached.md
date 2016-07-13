@@ -44,5 +44,5 @@ racadm fwupdate -g -u -a $tftp_server_ip -d /dell/idrac7-1.57.57
 * 通过racadm命令行升级
 
 ```
-racadm -r iDrac_IP -u root -p calvin fwupdate -g -u -a $tftp_server_ip -d /dell/idrac7-1.57.57/
+racadm -r iDrac_IP -u root -p calvin fwupdate -g -u -a $tftp_server_ip -d /dell/idrac7-1.57.57
 ```
