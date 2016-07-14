@@ -16,6 +16,11 @@ Dell R420服务器中，比较经常出现idrac无法连接，或者连接用户
 *RAC0218: The maximum number of user sessions is reached.*
 ![](http://m114-static.qiniudn.com/img/Dell_iDRAC_7_Enterprise_RAC0218_-_The_maximum_number_of_user_sessions_is_reached.jpg)
 
+**2种临时解决方法(idrac重新初始化)**
+
+* 长按前面板i键20秒，idrac会重启初始化  （建议使用这种方法，无需重启服务器）
+* 关机后拔掉电源线，长按电源开关按键15秒，再插上电源线开机
+
 **tftp server准备**
 
 * [1.57.57](http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=XH6FX)
