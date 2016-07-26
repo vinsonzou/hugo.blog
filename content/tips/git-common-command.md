@@ -95,3 +95,34 @@ git format-patch -1 commit版本号
 # 应用patch文件
 git apply xxx.patch
 ```
+
+### 6. 使用 rebase -i 合并提交
+
+**合并最近两个commit**
+```
+git rebase -i HEAD~~
+```
+
+默认的文字编辑器会自动开启，将看的HEAD 到 HEAD~~ 的提交
+
+```
+pick 7118c53 添加commit1的说明
+pick ce32af7 添加commit2的说明
+
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+# However, if you remove everything, the rebase will be aborted.
+#
+```
+
+将第二行的 "pick" 改为 "squash", 保存后退出。由于合并后要提交，所以编辑器会提醒您编辑这个最新的提交信息，请编辑信息后保存并退出。
+
+这样，两个提交就合并成一个提交了。请用 log 命令确认历史记录。
