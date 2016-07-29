@@ -7,6 +7,11 @@ topics = []
 
 +++
 
+**环境**
+
+ceph version 10.2.2 (45107e21c568dd033c2f0a3107dec8f0b0e58374)</br>
+ceph-deploy 1.5.34
+
 ceph集群jewel版本部署过程中执行osd激活操作如下
 ```
 ceph-deploy osd activate ceph13:/dev/sdb1:/dev/sda2
