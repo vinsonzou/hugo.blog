@@ -3,7 +3,7 @@ date = "2016-07-29T00:29:29+08:00"
 description = ""
 tags = ["ceph"]
 title = "ceph集群jewel版本部署osd激活权限报错"
-topics = []
+topics = ["Ceph"]
 
 +++
 

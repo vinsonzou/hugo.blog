@@ -2,6 +2,7 @@
 date = "2015-04-25T17:16:29+08:00"
 tags = ["Zabbix", "Telegram"]
 title = "Zabbix使用Telegram发送报警"
+topics = ["Zabbix"]
 
 +++
 

@@ -3,7 +3,7 @@ date = "2016-07-28T13:17:52+08:00"
 description = ""
 tags = ["ceph"]
 title = "使用国内源部署Ceph"
-topics = []
+topics = ["Ceph"]
 
 +++
 

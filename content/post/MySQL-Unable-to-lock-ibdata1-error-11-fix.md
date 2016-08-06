@@ -3,7 +3,7 @@ date = "2016-08-03T10:52:24+08:00"
 description = ""
 tags = ["MySQL"]
 title = "MySQL Unable to lock ibdata1 error 11 fix"
-topics = []
+topics = ["MySQL"]
 
 +++
 

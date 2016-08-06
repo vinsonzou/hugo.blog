@@ -36,11 +36,11 @@ paginate = 5
     identifier = "post"
     url = "/post/"
   [[menu.main]]
-    name = "Tips"
-    pre = "<i class='fa fa-list fa-fw'></i>"
+    name = "Topics"
+    pre = "<i class='fa fa-folder fa-fw'></i>"
     weight = 2
-    identifier = "tips"
-    url = "/tips/"
+    identifier = "topic"
+    url = "/topics/"
   [[menu.main]]
     name = "Tags"
     pre = "<i class='fa fa-tags fa-fw'></i>"
