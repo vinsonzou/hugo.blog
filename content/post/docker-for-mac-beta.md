@@ -53,7 +53,7 @@ pinata get daemon > myconfig.json
 
 将myconfig.json修改为:
 ```
-{"storage-driver":"aufs","debug":true,"registry-mirrors":["http://hub-mirror.c.163.com/"]}
+{"storage-driver":"aufs","debug":true,"registry-mirrors":["https://docker.mirrors.ustc.edu.cn"]}
 ```
 
 导入:
