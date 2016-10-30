@@ -36,6 +36,7 @@ description = ""
 - [lua-resty-dns](https://github.com/openresty/lua-resty-dns)
 - [lua-resty-lock](https://github.com/openresty/lua-resty-lock)
 - [lua-resty-shell](https://github.com/juce/lua-resty-shell)
+- [lua-resty-template](https://github.com/bungle/lua-resty-template)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
