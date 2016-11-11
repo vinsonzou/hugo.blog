@@ -126,3 +126,38 @@ pick ce32af7 添加commit2的说明
 将第二行的 "pick" 改为 "squash", 保存后退出。由于合并后要提交，所以编辑器会提醒您编辑这个最新的提交信息，请编辑信息后保存并退出。
 
 这样，两个提交就合并成一个提交了。请用 log 命令确认历史记录。
+
+### 7. tag使用
+**创建tag**
+
+```
+git tag -a v0.1 -m 'version 0.1'
+```
+
+**查看tag**
+
+```
+git tag
+git show v0.1
+```
+
+**tag 远程推送**
+
+```
+git push origin --tags
+```
+
+**获取远程版本部署**
+
+```
+git fetch origin tag v0.1
+```
+
+**删除tag**
+
+```
+#本地删除
+git tag -d v0.1
+#远程删除(git >= v1.7.0)
+git push origin --delete tag v0.1
+```
