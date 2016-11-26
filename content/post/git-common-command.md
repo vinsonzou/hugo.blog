@@ -161,3 +161,8 @@ git tag -d v0.1
 #远程删除(git >= v1.7.0)
 git push origin --delete tag v0.1
 ```
+
+### 8. 查看具体commit的某个文件的修改内容
+```
+git show commit哈希值 文件名
+```
