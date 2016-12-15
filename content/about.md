@@ -37,7 +37,8 @@ description = ""
 - [lua-resty-lock](https://github.com/openresty/lua-resty-lock)
 - [lua-resty-shell](https://github.com/juce/lua-resty-shell)
 - [lua-resty-template](https://github.com/bungle/lua-resty-template)
+- [lua-upstream-nginx-module](https://github.com/openresty/lua-upstream-nginx-module)
+- [lua-resty-upstream-healthcheck](https://github.com/openresty/lua-resty-upstream-healthcheck)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
-
