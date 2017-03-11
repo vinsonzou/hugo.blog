@@ -19,6 +19,7 @@ description = ""
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
 - [Flask-Orator](https://github.com/sdispater/flask-orator)
+- [Sanic](https://github.com/channelcat/sanic)
 
 ## ngx_lua常用模块
 - [lua-resty-core](https://github.com/openresty/lua-resty-core)
@@ -39,6 +40,10 @@ description = ""
 - [lua-resty-template](https://github.com/bungle/lua-resty-template)
 - [lua-upstream-nginx-module](https://github.com/openresty/lua-upstream-nginx-module)
 - [lua-resty-upstream-healthcheck](https://github.com/openresty/lua-resty-upstream-healthcheck)
+- [lua-resty-checkups](https://github.com/upyun/lua-resty-checkups)
+- [lua-resty-balancer](https://github.com/agentzh/lua-resty-balancer)
+- [lua-resty-jit-uuid](https://github.com/thibaultcha/lua-resty-jit-uuid)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
+- [Learn Lua in 15 Minutes](http://tylerneylon.com/a/learn-lua/)
