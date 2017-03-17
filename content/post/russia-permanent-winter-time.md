@@ -6,6 +6,10 @@ topics = ["Tips"]
 
 +++
 
+### 本文更新说明
+
+* 2017.03.17: 修复java时区更新方法
+
 ### 系统环境
 
 OS: CentOS 6.X
@@ -24,6 +28,11 @@ JDK: 6
 
 ### 解决方法
 
-更新JDK的时区文件即可
+使用Oracle TZUpdater进行更新即可
 
-	ln -sf /usr/share/zoneinfo/Europe/Moscow /usr/local/jdk/jre/lib/zi/Europe/Moscow
+    java -jar tzupdater.jar -l http://www.iana.org/time-zones/repository/tzdata-latest.tar.gz
+
+    工具地址：http://www.oracle.com/technetwork/java/javase/downloads/tzupdater-download-513681.html
+
+参考：http://www.jvmhost.com/articles/java-and-timezones/
+
