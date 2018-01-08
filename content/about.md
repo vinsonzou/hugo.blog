@@ -15,6 +15,8 @@ description = ""
 - [tablib](https://github.com/kennethreitz/tablib)
 - [yapf](https://pypi.python.org/pypi/yapf)
 - [keyring](https://pypi.python.org/pypi/keyring)
+- [ahocorasick](https://pypi.python.org/pypi/ahocorasick)
+- [esmre](https://pypi.python.org/pypi/esmre)
 
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
@@ -51,3 +53,8 @@ description = ""
 
 ## Go Web开发
 - [Gin](https://github.com/gin-gonic/gin)
+
+## Tools
+- [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
+- [Go BitTorrent Tracker](https://github.com/GrappigPanda/notorious)
+- [Go Full-featured BitTorrent client package and utilities](https://github.com/anacrolix/torrent)
