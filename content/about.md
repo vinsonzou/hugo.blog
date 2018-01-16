@@ -8,6 +8,7 @@ description = ""
 ## 收藏站点
 - [OpenResty最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/index.html)
 - [Jerry Qu HTTPS最佳实践](https://imququ.com)
+- [IP黑名单](https://github.com/firehol/blocklist-ipsets)
 
 ## Python常用模块
 - [requests](https://github.com/kennethreitz/requests)
