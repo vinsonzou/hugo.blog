@@ -12,6 +12,7 @@ description = ""
 
 ## Python常用模块
 - [requests](https://github.com/kennethreitz/requests)
+- [requests-html](https://github.com/kennethreitz/requests-html)
 - [records](https://github.com/kennethreitz/records)
 - [tablib](https://github.com/kennethreitz/tablib)
 - [yapf](https://pypi.python.org/pypi/yapf)
@@ -47,6 +48,7 @@ description = ""
 - [lua-resty-balancer](https://github.com/agentzh/lua-resty-balancer)
 - [lua-resty-jit-uuid](https://github.com/thibaultcha/lua-resty-jit-uuid)
 - [lua-resty-mlcache](https://github.com/thibaultcha/lua-resty-mlcache)
+- [lua-resty-iputils](https://github.com/hamishforbes/lua-resty-iputils)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -54,6 +56,10 @@ description = ""
 
 ## Go Web开发
 - [Gin](https://github.com/gin-gonic/gin)
+
+## Go常用模块
+- [otp](https://github.com/pquerna/otp)
+- [viper](https://github.com/spf13/viper)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
