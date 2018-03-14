@@ -49,6 +49,7 @@ description = ""
 - [lua-resty-jit-uuid](https://github.com/thibaultcha/lua-resty-jit-uuid)
 - [lua-resty-mlcache](https://github.com/thibaultcha/lua-resty-mlcache)
 - [lua-resty-iputils](https://github.com/hamishforbes/lua-resty-iputils)
+- [lua-resty-rsa](https://github.com/doujiang24/lua-resty-rsa)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -60,8 +61,10 @@ description = ""
 ## Go常用模块
 - [otp](https://github.com/pquerna/otp)
 - [viper](https://github.com/spf13/viper)
+- [屏蔽字过滤服务](https://github.com/goofansu/wego)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
 - [Go BitTorrent Tracker](https://github.com/GrappigPanda/notorious)
 - [Go Full-featured BitTorrent client package and utilities](https://github.com/anacrolix/torrent)
+- [跨平台生成工具](https://github.com/laher/goxc)
