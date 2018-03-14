@@ -1,10 +1,10 @@
-baseurl = "ops.m114.org"
+baseurl = "http://ops.m114.org/"
 languageCode = "zh-cn"
 title = "ops"
 theme = "blackburn"
 
 # Shown in the side menu
-copyright = "&copy; 2014-2017. All rights reserved."
+copyright = "&copy; 2014-2018. All rights reserved."
 canonifyurls = true
 paginate = 10
 
