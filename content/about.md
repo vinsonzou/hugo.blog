@@ -50,6 +50,7 @@ description = ""
 - [lua-resty-mlcache](https://github.com/thibaultcha/lua-resty-mlcache)
 - [lua-resty-iputils](https://github.com/hamishforbes/lua-resty-iputils)
 - [lua-resty-rsa](https://github.com/doujiang24/lua-resty-rsa)
+- [lua-resty-hmac](https://github.com/jkeys089/lua-resty-hmac)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
