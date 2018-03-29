@@ -1,4 +1,4 @@
-baseurl = "http://ops.m114.org/"
+baseurl = "https://ops.m114.org/"
 languageCode = "zh-cn"
 title = "ops"
 theme = "blackburn"
