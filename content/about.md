@@ -51,6 +51,8 @@ description = ""
 - [lua-resty-iputils](https://github.com/hamishforbes/lua-resty-iputils)
 - [lua-resty-rsa](https://github.com/doujiang24/lua-resty-rsa)
 - [lua-resty-hmac](https://github.com/jkeys089/lua-resty-hmac)
+- [nginx-google-oauth](https://github.com/cloudflare/nginx-google-oauth)
+- [lua-aho-corasick](https://github.com/cloudflare/lua-aho-corasick)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -63,6 +65,7 @@ description = ""
 - [otp](https://github.com/pquerna/otp)
 - [viper](https://github.com/spf13/viper)
 - [屏蔽字过滤服务](https://github.com/goofansu/wego)
+- [gjson](https://github.com/tidwall/gjson)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
