@@ -74,4 +74,5 @@ description = ""
 - [Go Full-featured BitTorrent client package and utilities](https://github.com/anacrolix/torrent)
 - [跨平台生成工具](https://github.com/laher/goxc)
 - [go火焰图](https://github.com/uber/go-torch)
+- [jxwaf](https://github.com/jx-sec/jxwaf)
 - [QingCloud MySQL Plus开源版(GTID + Raft + Semi-Sync-Replication)](https://github.com/radondb/xenon)
