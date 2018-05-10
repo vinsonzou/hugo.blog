@@ -66,9 +66,12 @@ description = ""
 - [viper](https://github.com/spf13/viper)
 - [屏蔽字过滤服务](https://github.com/goofansu/wego)
 - [gjson](https://github.com/tidwall/gjson)
+- [gendry](https://github.com/didi/gendry)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
 - [Go BitTorrent Tracker](https://github.com/GrappigPanda/notorious)
 - [Go Full-featured BitTorrent client package and utilities](https://github.com/anacrolix/torrent)
 - [跨平台生成工具](https://github.com/laher/goxc)
+- [go火焰图](https://github.com/uber/go-torch)
+- [QingCloud MySQL Plus开源版(GTID + Raft + Semi-Sync-Replication)](https://github.com/radondb/xenon)
