@@ -53,6 +53,7 @@ description = ""
 - [lua-resty-hmac](https://github.com/jkeys089/lua-resty-hmac)
 - [nginx-google-oauth](https://github.com/cloudflare/nginx-google-oauth)
 - [lua-aho-corasick](https://github.com/cloudflare/lua-aho-corasick)
+- [jxwaf](https://github.com/jx-sec/jxwaf)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -74,5 +75,6 @@ description = ""
 - [Go Full-featured BitTorrent client package and utilities](https://github.com/anacrolix/torrent)
 - [跨平台生成工具](https://github.com/laher/goxc)
 - [go火焰图](https://github.com/uber/go-torch)
-- [jxwaf](https://github.com/jx-sec/jxwaf)
 - [QingCloud MySQL Plus开源版(GTID + Raft + Semi-Sync-Replication)](https://github.com/radondb/xenon)
+- [MQ: meq](https://github.com/meqio/meq)
+- [Go爬虫框架: colly](https://github.com/gocolly/colly)
