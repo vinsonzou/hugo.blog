@@ -78,3 +78,5 @@ description = ""
 - [QingCloud MySQL Plus开源版(GTID + Raft + Semi-Sync-Replication)](https://github.com/radondb/xenon)
 - [MQ: meq](https://github.com/meqio/meq)
 - [Go爬虫框架: colly](https://github.com/gocolly/colly)
+- [coredns](https://github.com/coredns/coredns)
+- [A native go client for HDFS](https://github.com/colinmarc/hdfs)
