@@ -54,6 +54,7 @@ description = ""
 - [nginx-google-oauth](https://github.com/cloudflare/nginx-google-oauth)
 - [lua-aho-corasick](https://github.com/cloudflare/lua-aho-corasick)
 - [jxwaf](https://github.com/jx-sec/jxwaf)
+- [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
