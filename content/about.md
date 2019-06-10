@@ -55,6 +55,9 @@ description = ""
 - [lua-aho-corasick](https://github.com/cloudflare/lua-aho-corasick)
 - [jxwaf](https://github.com/jx-sec/jxwaf)
 - [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
+- [apisix](https://github.com/iresty/apisix)
+- [lua-resty-etcd](https://github.com/iresty/lua-resty-etcd)
+- [lua-resty-lubr3](https://github.com/iresty/lua-resty-libr3)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -69,6 +72,7 @@ description = ""
 - [屏蔽字过滤服务](https://github.com/goofansu/wego)
 - [gjson](https://github.com/tidwall/gjson)
 - [gendry](https://github.com/didi/gendry)
+- [json-iterator](https://github.com/json-iterator/go)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
