@@ -57,7 +57,9 @@ description = ""
 - [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
 - [apisix](https://github.com/iresty/apisix)
 - [lua-resty-etcd](https://github.com/iresty/lua-resty-etcd)
-- [lua-resty-lubr3](https://github.com/iresty/lua-resty-libr3)
+- [lua-resty-libr3](https://github.com/iresty/lua-resty-libr3)
+- [lua-resty-resolver](https://github.com/jkeys089/lua-resty-resolver)
+- [lua-resty-dns-client](https://github.com/Kong/lua-resty-dns-client)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -73,6 +75,8 @@ description = ""
 - [gjson](https://github.com/tidwall/gjson)
 - [gendry](https://github.com/didi/gendry)
 - [json-iterator](https://github.com/json-iterator/go)
+- [sio](https://github.com/minio/sio)
+- [cloudflare Go程序平滑重启](https://github.com/cloudflare/tableflip)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
