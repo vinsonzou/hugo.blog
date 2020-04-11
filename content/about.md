@@ -60,10 +60,11 @@ description = ""
     - [jxwaf](https://github.com/jx-sec/jxwaf)
     - [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
     - [lua-resty-resolver](https://github.com/jkeys089/lua-resty-resolver)
-    - [lua-resty-dns-client](https://github.com/Kong/lua-resty-dns-client)
-    - [apisix](https://github.com/iresty/apisix)
-    - [lua-resty-etcd](https://github.com/iresty/lua-resty-etcd)
-    - [lua-resty-ipmatcher(hash实现)](https://github.com/iresty/lua-resty-ipmatcher)
+    - [apisix](https://github.com/apache/incubator-apisix)
+    - [lua-resty-etcd](https://github.com/api7/lua-resty-etcd)
+    - [lua-resty-ipmatcher(hash实现)](https://github.com/api7/lua-resty-ipmatcher)
+    - [jsonschema](https://github.com/api7/jsonschema)
+    - [lua-resty-acme](https://github.com/fffonion/lua-resty-acme)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -71,6 +72,7 @@ description = ""
 
 ## Go Web开发
 - [Gin](https://github.com/gin-gonic/gin)
+- [fiber](https://github.com/gofiber/fiber)
 
 ## Go常用模块
 - [otp](https://github.com/pquerna/otp)
@@ -81,6 +83,10 @@ description = ""
 - [json-iterator](https://github.com/json-iterator/go)
 - [sio](https://github.com/minio/sio)
 - [cloudflare Go程序平滑重启](https://github.com/cloudflare/tableflip)
+- [adiantum加密库](https://github.com/lukechampine/adiantum)
+- [ants](https://github.com/panjf2000/ants)
+- [freecache](https://github.com/coocood/freecache)
+- [go jsonschema](https://github.com/santhosh-tekuri/jsonschema)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
@@ -93,3 +99,5 @@ description = ""
 - [Go爬虫框架: colly](https://github.com/gocolly/colly)
 - [coredns](https://github.com/coredns/coredns)
 - [A native go client for HDFS](https://github.com/colinmarc/hdfs)
+- [redis压测工具](https://github.com/fperf/redis)
+- [Netflix bpftoolkit](https://github.com/Netflix-Skunkworks/bpftoolkit)
