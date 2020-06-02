@@ -65,6 +65,9 @@ description = ""
     - [lua-resty-ipmatcher(hash实现)](https://github.com/api7/lua-resty-ipmatcher)
     - [jsonschema](https://github.com/api7/jsonschema)
     - [lua-resty-acme](https://github.com/fffonion/lua-resty-acme)
+    - [skywalking-nginx-lua](https://github.com/apache/skywalking-nginx-lua)
+    - [xml2lua](https://github.com/manoelcampos/xml2lua)
+    - [微信对接解密/加密](https://github.com/TheNorthMemory/WXBizMsgCrypt)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
