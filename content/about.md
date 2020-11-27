@@ -20,6 +20,7 @@ description = ""
 - [ahocorasick](https://pypi.python.org/pypi/ahocorasick)
 - [esmre](https://pypi.python.org/pypi/esmre)
 - [EasyOCR](https://github.com/JaidedAI/EasyOCR)
+- [U-2-Net](https://github.com/NathanUA/U-2-Net)
 
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
@@ -69,6 +70,7 @@ description = ""
     - [skywalking-nginx-lua](https://github.com/apache/skywalking-nginx-lua)
     - [xml2lua](https://github.com/manoelcampos/xml2lua)
     - [微信对接解密/加密](https://github.com/TheNorthMemory/WXBizMsgCrypt)
+    - [lua-resty-multiplexer](https://github.com/fffonion/lua-resty-multiplexer)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -107,3 +109,4 @@ description = ""
 - [redis压测工具](https://github.com/fperf/redis)
 - [Netflix bpftoolkit](https://github.com/Netflix-Skunkworks/bpftoolkit)
 - [mkcert](https://github.com/FiloSottile/mkcert)
+- [ping动态图形化](https://github.com/orf/gping)
