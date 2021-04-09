@@ -21,6 +21,7 @@ description = ""
 - [esmre](https://pypi.python.org/pypi/esmre)
 - [EasyOCR](https://github.com/JaidedAI/EasyOCR)
 - [U-2-Net](https://github.com/NathanUA/U-2-Net)
+- [Excel](https://github.com/xlwings/xlwings)
 
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
@@ -94,6 +95,7 @@ description = ""
 - [ants](https://github.com/panjf2000/ants)
 - [freecache](https://github.com/coocood/freecache)
 - [go jsonschema](https://github.com/santhosh-tekuri/jsonschema)
+- [go-attr](https://github.com/ssrathi/go-attr)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
@@ -110,3 +112,6 @@ description = ""
 - [Netflix bpftoolkit](https://github.com/Netflix-Skunkworks/bpftoolkit)
 - [mkcert](https://github.com/FiloSottile/mkcert)
 - [ping动态图形化](https://github.com/orf/gping)
+- [敏感文件发现工具](https://github.com/thunderbarca/Caesar)
+- [gops](https://github.com/google/gops)
+- [go-xss](https://github.com/feiin/go-xss)
