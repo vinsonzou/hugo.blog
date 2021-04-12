@@ -45,13 +45,13 @@ description = ""
     - [lua-upstream-nginx-module](https://github.com/openresty/lua-upstream-nginx-module)
     - [lua-resty-upstream-healthcheck](https://github.com/openresty/lua-resty-upstream-healthcheck)
     - [lua-resty-balancer](https://github.com/agentzh/lua-resty-balancer)
+    - [lua-resty-shell](https://github.com/openresty/lua-resty-shell)
 
 - 第三方库
     - [lua-resty-logger-socket](https://github.com/cloudflare/lua-resty-logger-socket)
     - [lua-aho-corasick](https://github.com/cloudflare/lua-aho-corasick)
     - [nginx-google-oauth](https://github.com/cloudflare/nginx-google-oauth)
     - [lua-resty-http](https://github.com/ledgetech/lua-resty-http)
-    - [lua-resty-requests](https://github.com/tokers/lua-resty-requests)
     - [lua-resty-shell](https://github.com/juce/lua-resty-shell)
     - [lua-resty-template](https://github.com/bungle/lua-resty-template)
     - [lua-resty-checkups](https://github.com/upyun/lua-resty-checkups)
@@ -63,7 +63,7 @@ description = ""
     - [jxwaf](https://github.com/jx-sec/jxwaf)
     - [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
     - [lua-resty-resolver](https://github.com/jkeys089/lua-resty-resolver)
-    - [apisix](https://github.com/apache/incubator-apisix)
+    - [apisix](https://github.com/apache/apisix)
     - [lua-resty-etcd](https://github.com/api7/lua-resty-etcd)
     - [lua-resty-ipmatcher(hash实现)](https://github.com/api7/lua-resty-ipmatcher)
     - [jsonschema](https://github.com/api7/jsonschema)
@@ -72,6 +72,7 @@ description = ""
     - [xml2lua](https://github.com/manoelcampos/xml2lua)
     - [微信对接解密/加密](https://github.com/TheNorthMemory/WXBizMsgCrypt)
     - [lua-resty-multiplexer](https://github.com/fffonion/lua-resty-multiplexer)
+    - [lua-resty-sniproxy](https://github.com/fffonion/lua-resty-sniproxy)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
