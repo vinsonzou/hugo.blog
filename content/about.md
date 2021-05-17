@@ -58,7 +58,7 @@ description = ""
     - [lua-resty-jit-uuid](https://github.com/thibaultcha/lua-resty-jit-uuid)
     - [lua-resty-mlcache](https://github.com/thibaultcha/lua-resty-mlcache)
     - [lua-resty-iputils(遍历)](https://github.com/hamishforbes/lua-resty-iputils)
-    - [lua-resty-rsa](https://github.com/doujiang24/lua-resty-rsa)
+    - [lua-resty-rsa](https://github.com/spacewander/lua-resty-rsa)
     - [lua-resty-hmac](https://github.com/jkeys089/lua-resty-hmac)
     - [jxwaf](https://github.com/jx-sec/jxwaf)
     - [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
