@@ -116,3 +116,4 @@ description = ""
 - [敏感文件发现工具](https://github.com/thunderbarca/Caesar)
 - [gops](https://github.com/google/gops)
 - [go-xss](https://github.com/feiin/go-xss)
+- [go-keyring](https://github.com/zalando/go-keyring)
