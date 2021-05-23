@@ -15,7 +15,7 @@ tags = ["mysql","centos8"]
 ## 报错信息
 
 ### 1. 编译报错
-```
+```c
 CMake Error at plugin/group_replication/libmysqlgcs/rpcgen.cmake:100 (MESSAGE):
   Could not find rpcgen
 Call Stack (most recent call first):
@@ -24,7 +24,7 @@ Call Stack (most recent call first):
 
 **解决方法**
 
-```
+```sh
 yum --enablerepo=PowerTools install rpcgen
 ```
 
@@ -32,13 +32,13 @@ yum --enablerepo=PowerTools install rpcgen
 
 **报错信息如下**
 
-```
+```sh
 [ERROR] Can't start server: can't check PID filepath: No such file or directory
 ```
 
 /usr/lib/systemd/system/mysqld.service 默认配置如下
 
-```
+```sh
 # Copyright (c) 2015, 2016, Oracle and/or its affiliates. All rights reserved.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -111,19 +111,19 @@ PrivateTmp=false
 
 - 默认mysqld.service中的pid存在/var/run/mysqld，此目录必须存在且mysql用户有权限
 
-```
+```sh
 echo -e 'd /run/mysqld 0755 mysql mysql -' > /usr/lib/tmpfiles.d/mysqld
 ```
 
 ### 3. 启动警告信息
 
-```
+```sh
 [Warning] Could not increase number of max_open_files to more than 5000 (request: 10000)
 ```
 
 **解决方法**
 
-```
+```sh
 # 调整systemd mysqld.service配置(即/usr/lib/systemd/system/mysqld.service)
 LimitNOFILE = 5000 调整为 LimitNOFILE = 10000
 systemctl daemon-reload

@@ -11,7 +11,7 @@ topics = ["Tips"]
 
 Git的设置文件为`.gitconfig`，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
 
-```
+```sh
 # 显示当前的Git配置
 $ git config --list
 
@@ -30,7 +30,7 @@ $ git config [--global] user.email "[email address]"
 
 ### 1. 如果在你Fork之后，原始的repo更新了，怎么将原始的更新内容与你当前的合并？
 
-```
+```sh
 1. 增加原分支为远程分支，命名为upstream
    git remote add upstream https://github.com/vinsonzou/docker-images.git
 2. fetch该远程仓库下的所有分支到remote-tracking分支
@@ -51,7 +51,7 @@ $ git config [--global] user.email "[email address]"
 
 起因: 不小新把记录了公司服务器IP,账号,密码的文件提交到了git
 
-```
+```sh
 #方法
 git reset --hard <commit_id>
 git push origin HEAD --force
@@ -73,7 +73,7 @@ HEAD^ 上一次
 
 ### 4. git 恢复单个文件的历史版本
 
-```
+```sh
 #查看该文件的历史版本信息
 git log tmp.txt
 
@@ -88,7 +88,7 @@ git commit -m "revert old file"
 
 ### 5. 根据COMMIT生成PATCH
 
-```
+```sh
 # 生成patch文件(生成的patch有统计信息和git的版本信息)
 git format-patch -1 commit版本号
 
@@ -99,13 +99,13 @@ git apply xxx.patch
 ### 6. 使用 rebase -i 合并提交
 
 **合并最近两个commit**
-```
+```sh
 git rebase -i HEAD~~
 ```
 
 默认的文字编辑器会自动开启，将看的HEAD 到 HEAD~~ 的提交
 
-```
+```sh
 pick 7118c53 添加commit1的说明
 pick ce32af7 添加commit2的说明
 
@@ -130,32 +130,32 @@ pick ce32af7 添加commit2的说明
 ### 7. tag使用
 **创建tag**
 
-```
+```sh
 git tag -a v0.1 -m 'version 0.1'
 ```
 
 **查看tag**
 
-```
+```sh
 git tag
 git show v0.1
 ```
 
 **tag 远程推送**
 
-```
+```sh
 git push origin --tags
 ```
 
 **获取远程版本部署**
 
-```
+```sh
 git fetch origin tag v0.1
 ```
 
 **删除tag**
 
-```
+```sh
 #本地删除
 git tag -d v0.1
 #远程删除(git >= v1.7.0)
@@ -163,12 +163,12 @@ git push origin --delete tag v0.1
 ```
 
 ### 8. 查看具体commit的某个文件的修改内容
-```
+```sh
 git show commit哈希值 文件名
 ```
 
 ### 9. 覆盖上一次提交记录和注释
-```
+```sh
 # 本地覆盖记录
 git commit --amend -m "Add comment msg"
 

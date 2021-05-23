@@ -9,7 +9,7 @@ date = "2016-10-30T10:27:24+08:00"
 
 列表项由数字、字符串组成，统计重复项
 
-```
+```py
 >>> from collections import defaultdict
 >>> d = defaultdict(int)
 >>> for x in [1, 2, 3, 1, 2, 3, 1]:
@@ -28,7 +28,7 @@ date = "2016-10-30T10:27:24+08:00"
 
 列表项由字典组成，统计某一键值的重复数
 
-```
+```py
 >>> e = defaultdict(int)
 >>> for x in [{'a': 1, 'b': 1}, {'a': 2, 'b':1}, {'a': 1, 'c': 3}]:
 ...     e[x['a']] += 1

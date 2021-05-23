@@ -13,12 +13,12 @@ ceph version 10.2.2 (45107e21c568dd033c2f0a3107dec8f0b0e58374)</br>
 ceph-deploy 1.5.34
 
 ceph集群jewel版本部署过程中执行osd激活操作如下
-```
+```sh
 ceph-deploy osd activate ceph13:/dev/sdb1:/dev/sda2
 ```
 
 报错内容如下
-```
+```sh
 [2016-07-29 00:05:19,106][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
 [2016-07-29 00:05:19,107][ceph_deploy.cli][INFO  ] Invoked (1.5.34): /bin/ceph-deploy osd activate ceph13:/dev/sdb1:/dev/sda2
 [2016-07-29 00:05:19,107][ceph_deploy.cli][INFO  ] ceph-deploy options:
@@ -92,7 +92,7 @@ ceph-deploy osd activate ceph13:/dev/sdb1:/dev/sda2
 **解决办法:**
 
 将ceph集群需要使用的所有磁盘权限，所属用户、用户组改给ceph
-```
+```sh
 chown ceph:ceph /dev/sdb1
 ```
 

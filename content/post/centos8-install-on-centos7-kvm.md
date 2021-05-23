@@ -18,7 +18,7 @@ osinfo-query os
 
 当前环境默认不支持CentOS8/RHEL8，需做如下操作:
 
-```
+```sh
 # osinfo-db 需更新至osinfo-db-20190805-2
 yum install osinfo-db-tools osinfo-db
 ```

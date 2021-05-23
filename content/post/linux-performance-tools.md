@@ -9,12 +9,12 @@ topics = ["Tips"]
 
 ## 性能调优
 
-![](http://m114-static.qiniudn.com/img/linux_tuning_tools.png?imageView2/2/w/800/q/75)
+![](/img/linux_tuning_tools.png)
 
 ## 性能监控
 
-![](http://m114-static.qiniudn.com/img/linux_observability_tools.png?imageView2/2/w/800/q/75)
+![](/img/linux_observability_tools.png)
 
 ## 性能测试
 
-![](http://m114-static.qiniudn.com/img/linux_benchmarking_tools.png?imageView2/2/w/800/q/75)
+![](/img/linux_benchmarking_tools.png)

@@ -11,7 +11,7 @@ tags = ["tomcat"]
 
 升级tomcat至7.0.76后，GET请求的参数中含有中文时tomcat返回400错误，tomcat错误日志如下
 
-```
+```java
 java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
 	at org.apache.coyote.http11.InternalNioInputBuffer.parseRequestLine(InternalNioInputBuffer.java:317)
 	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1000)

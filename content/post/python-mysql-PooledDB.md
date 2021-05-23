@@ -9,7 +9,7 @@ tags = ["Python","MySQL"]
 
 **不用连接池的MySQL连接方法**
 
-```
+```py
 import MySQLdb
 conn= MySQLdb.connect(host='127.0.0.1',user='root',passwd='password',db='DB_test',port=3306)
 cur=conn.cursor()
@@ -21,7 +21,7 @@ conn.close()
 ```
 
 **用连接池后的连接方法**
-```
+```py
 import MySQLdb
 from DBUtils.PooledDB import PooledDB
 pool = PooledDB(MySQLdb,5,host='127.0.0.1',user='root',passwd='password',db='DB_test',port=3306)    #5为连接池里的最少连接数

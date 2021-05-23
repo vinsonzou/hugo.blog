@@ -30,9 +30,11 @@ JDK: 6
 
 使用Oracle TZUpdater进行更新即可
 
-    java -jar tzupdater.jar -l http://www.iana.org/time-zones/repository/tzdata-latest.tar.gz
+```sh
+java -jar tzupdater.jar -l http://www.iana.org/time-zones/repository/tzdata-latest.tar.gz
+```
 
-    工具地址：http://www.oracle.com/technetwork/java/javase/downloads/tzupdater-download-513681.html
+工具地址：http://www.oracle.com/technetwork/java/javase/downloads/tzupdater-download-513681.html
 
 参考：http://www.jvmhost.com/articles/java-and-timezones/
 

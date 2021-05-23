@@ -24,14 +24,14 @@ topics = ["Ceph"]
 
 由于Jewel版本中已经不提供el6的镜像源，所以只能使用CentOS 7以上版本进行安装。我们并不需要在repos里增加相应的源，只需要设置环境变量，即可让ceph-deploy使用国内源，具体过程如下：
 
-```
+```sh
 export CEPH_DEPLOY_REPO_URL=http://mirrors.aliyun.com/ceph/rpm-jewel/el7
 export CEPH_DEPLOY_GPG_URL=http://mirrors.aliyun.com/ceph/keys/release.asc
 ```
 
 之后的过程就没任何区别了
 
-```
+```sh
 # Create monitor node
 ceph-deploy new node1 node2 node3
 

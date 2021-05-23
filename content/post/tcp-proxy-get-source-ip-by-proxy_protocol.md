@@ -28,7 +28,7 @@ tags = ["golang","proxy_protocol","cloudflare","go-mmproxy"]
 - go > 1.11
 - as root or with `CAP_NET_RAW` capability to be able to set `IP_TRANSPARENT` socket opt.
 
-```
+```sh
 go get github.com/path-network/go-mmproxy
 sudo setcap cap_net_raw=+ep $(readlink -f $(which go-mmproxy))
 ```
@@ -37,7 +37,7 @@ sudo setcap cap_net_raw=+ep $(readlink -f $(which go-mmproxy))
 
 - 启动
 
-```
+```sh
 # go-mmproxy监听端口为25577，TCP后端端口为25578
 ip rule add from 127.0.0.1/8 iif lo table 123
 ip route add local 0.0.0.0/0 dev lo table 123
@@ -46,7 +46,7 @@ go-mmproxy -l 0.0.0.0:25577 -4 127.0.0.1:25578 -6 "[::1]:25578" -allowed-subnets
 
 - 停止
 
-```
+```sh
 # 清理路由
 ip rule del from 127.0.0.1/8 iif lo table 123
 ip route del local 0.0.0.0/0 dev lo table 123

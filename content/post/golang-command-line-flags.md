@@ -9,7 +9,7 @@ tags = ["golang"]
 
 **示例代码，仅供参考**
 
-```
+```go
 package main
 
 import (
@@ -84,13 +84,13 @@ func main() {
 
 **传参数go run**
 
-```
+```go
 go run flag_demo.go -id=123 -name="zhangsan" -male=true p1 p2 p3 p4
 ```
 
 **示例输出结果**
 
-```
+```go
 parsed? =  false
 parsed? =  true
 ------ Args start ------

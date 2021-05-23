@@ -7,19 +7,25 @@ tags = ["curl"]
 
 一般使用curl请求自定义IP地址并且指定HOST的话可以这样。
 
-    curl -H 'Host: ops.m114.org' http://127.0.0.1
+```sh
+curl -H 'Host: ops.m114.org' http://127.0.0.1
+```
 
 但是如果你需要请求的地址是HTTPS就不行了
 
-    $ curl -H 'Host: ops.m114.org' https://127.0.0.1/
-    curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.
+```sh
+$ curl -H 'Host: ops.m114.org' https://127.0.0.1/
+curl: (51) Unable to communicate securely with peer: requested domain name does not match the server's certificate.
+```
 
 因为IP绝大多数情况下无法通过域名证书验证，还好curl中有`--resolv`参数可以让我们方便的指定域名的解析
 
-    # --resolv参数形式
-    --resolv host:port:address
-    # 示例
-    curl --resolv ops.m114.org:443:127.0.0.1 https://ops.m114.org
+```sh
+# --resolv参数形式
+--resolv host:port:address
+# 示例
+curl --resolv ops.m114.org:443:127.0.0.1 https://ops.m114.org
+```
 
 Ps:
 

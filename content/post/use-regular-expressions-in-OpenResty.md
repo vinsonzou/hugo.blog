@@ -9,7 +9,7 @@ topics = ["OpenResty"]
 
 在 OpenResty 中使用正则表达式，社区中推荐的做法是使用ngx.re api。比如匹配一个字符串是否为 http(s) 的链接，可以这么写：
 
-```
+```lua
 local function is_http_url(s)
     return ngx.re.find(s, [[^https?://[\w-_?.:/+=&#%]+$]])
 end
@@ -17,7 +17,7 @@ end
 
 压测一下:
 
-```
+```lua
 local t = os.clock()
 for _ = 1, max do
     is_http_url("http://blog.stackoverflow.com/2016/10/Stack-Overflow-92-Podcast-The-Guerilla-Guide-to-Interviewing/?cb=1")
@@ -29,7 +29,7 @@ print("Time cost: ", os.clock() - t, " s")
 
 另一种做法是使用 lua 的正则语法：
 
-```
+```lua
 local function is_http_url(s)
     return s:find("^https?://[%w-_%.%?:/%+=&#%%]+$")
 end
@@ -42,7 +42,7 @@ end
 仔细一瞧，前者的确漏了点东西。ngx.re默认不会缓存正则表达式编译后的结果。一般在其它编程平台上，我们都会先把字符串编译成正则表达式，再用到正则函数中。比如在
 Python 里使用 re.compile。所以赶紧补上：
 
-```
+```lua
 return ngx.re.find(s, [[^https?://[\w-_?.:/+=&#%]+$]], "o")
 ```
 
@@ -54,7 +54,7 @@ Expression库，我最喜欢它支持的(?name:pattern)形式的命名捕获功�
 
 其实 ngx.re 实现尚未用尽全力呢。开启了 JIT 之后，PCRE 库的性能会更上一层楼：
 
-```
+```lua
 return ngx.re.find(s, [[^https?://[\w-_?.:/+=&#%]+$]], "jo")
 ```
 
@@ -66,7 +66,7 @@ return ngx.re.find(s, [[^https?://[\w-_?.:/+=&#%]+$]], "jo")
 
 当然，OpenResty 军火库里还有另外一个武器：[lua-resty-core](https://github.com/openresty/lua-resty-core)
 
-```
+```lua
 require 'resty.core.regex'
 
 local function is_http_url(s)

@@ -13,7 +13,7 @@ CentOS 7.5.1804的libvirt从3.9升级至4.5时，无法启动，报错如下：
 
 **详细报错如下:**
 
-```
+```sh
 [root@localhost ~]# libvirtd -v
 2019-01-15 08:56:53.433+0000: 34181: info : libvirt version: 4.5.0, package: 10.el7_6.3 (CentOS BuildSystem <http://bugs.centos.org>, 2018-11-28-20:51:39, x86-01.bsys.centos.org)
 2019-01-15 08:56:53.433+0000: 34181: info : hostname: localhost.localdomain
@@ -32,7 +32,7 @@ CentOS 7.5.1804的libvirt从3.9升级至4.5时，无法启动，报错如下：
 
 `libvirt_storage_backend_rbd.so`应该是连接ceph块设备（rbd）的一个模块，这里暂时不用连接ceph，最简单粗暴的做法就是移除该模块，重启libvirtd。
 
-```
+```sh
 [root@localhost ~]# cd /usr/lib64/libvirt/storage-backend
 [root@localhost storage-backend]# mv libvirt_storage_backend_rbd.so libvirt_storage_backend_rbd.so.bak
 [root@localhost ~]# systemctl restart libvirtd

@@ -11,7 +11,9 @@ scrub
 -----
 ceph-osd会定义启动scrub线程，扫描部分对象（哪些对象？），和其他副本比较，发现是否一致。如果发现不一致，ceph会抛出这个异常给用户解决。以PG为粒度，触发scrub。用户手动修复，使用：
 
-    ceph pg repair <pg_id> # 全量复制master节点数据到副本节点。
+```sh
+ceph pg repair <pg_id> # 全量复制master节点数据到副本节点。
+```
 
 scrub分为light scrubbing和Deep scrubbing，前者是频率多直接检查hash值，后者是频率少直接读取内容计算checksum比较。
 

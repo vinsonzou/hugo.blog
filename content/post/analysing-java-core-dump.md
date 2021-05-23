@@ -15,7 +15,7 @@ There are different ways you can diagnose a JVM crash, listed below:
 
 When a fatal error occurs in the JVM, it produces an error log file called hs_err_pidXXXX.log, normally in the working directory of the process or in the temporary directory for the operating system. The top of this file contains the cause of the crash and the "problematic frame". For example, mine shows:
 
-```
+```sh
 $ head hs_err_pid21178.log
 #
 # A fatal error has been detected by the Java Runtime Environment:
@@ -30,7 +30,7 @@ $ head hs_err_pid21178.log
 ```
 
 There is also a stack trace:
-```
+```java
 Stack: [0x000000004012b000,0x000000004022c000],  sp=0x000000004022aac0,  free space=3fe0000000000000018k
 Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
 C  [libnativelib.so+0x75c]  bar+0x10
@@ -48,7 +48,7 @@ The stack trace shows that my java method, CoreDumper.core(), called into JNI an
 
 In some cases, the JVM may not produce a hs_err_pid file, for example, if the native code abruptly aborts by calling the abort function. In such cases, we need to analyse the core file produced. On my machine, the operating system writes out core files to /var/tmp/cores. You can use the following command to see where your system is configured to write out core files to:
 
-```
+```sh
 $ cat /proc/sys/kernel/core_pattern
 /var/tmp/cores/%e.%p.%u.core
 $ ls /var/tmp/cores
@@ -61,7 +61,7 @@ There are a few, different ways to look at core dumps:
 
 GNU Debugger (gdb) can examine a core file and work out what the program was doing when it crashed.
 
-```
+```c
 $ gdb $JAVA_HOME/bin/java /var/tmp/cores/java.14015.146385.core
 (gdb) where
 #0  0x0000002a959bd26d in raise () from /lib64/tls/libc.so.6
@@ -85,7 +85,7 @@ The where command prints the stack frames and shows that the bar function called
 
 jstack prints stack traces of Java threads for a given core file.
 
-```
+```java
 $ jstack -J-d64 $JAVA_HOME/bin/java /var/tmp/cores/java.14015.146385.core
 Debugger attached successfully.
 Server compiler detected.
@@ -116,7 +116,7 @@ Thread 16780: (state = IN_NATIVE)
 
 jmap examines a core file and prints out shared object memory maps or heap memory details.
 
-```
+```java
 $ jmap -J-d64 $JAVA_HOME/bin/java /var/tmp/cores/java.14015.146385.core
 Debugger attached successfully.
 Server compiler detected.

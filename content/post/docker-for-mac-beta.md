@@ -19,13 +19,13 @@ Docker for Mac 是一个原生的苹果应用程序，被安装到 `/Application
 
 ## 如何为Docker Engine设置代理
 
-```
+```sh
 screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
 ```
 
 敲一下回车，登录，用户名root，没有密码，直接回车。编辑/etc/init.d/docker文件，如下添加代理：
 
-```
+```sh
 start-stop-daemon --start --quiet \
 -e HTTP_PROXY=http(s)://proxy_host:proxy_port \
 --background \
@@ -37,7 +37,7 @@ start-stop-daemon --start --quiet \
 ```
 
 重启Docker服务
-```
+```sh
 /etc/init.d/docker restart
 /etc/init.d/docker status
 ```
@@ -47,17 +47,17 @@ start-stop-daemon --start --quiet \
 由于你懂的原因，国内拉镜像非常慢，甚至根本无法下载，解决方法如下：
 
 导出:
-```
+```sh
 pinata get daemon > myconfig.json
 ```
 
 将myconfig.json修改为:
-```
+```sh
 {"storage-driver":"aufs","debug":true,"registry-mirrors":["https://docker.mirrors.ustc.edu.cn"]}
 ```
 
 导入:
-```
+```sh
 pinata set daemon @myconfig.json
 ```
 

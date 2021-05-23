@@ -14,7 +14,7 @@ tags = ["golang"]
 **sync.WaitGroup只有3个方法，Add()，Done()，Wait()。** 其中Done()是Add(-1)的别名。简单的来说，使用Add()添加计数，Done()减掉一个计数，计数不为0, 阻塞Wait()的运行。 
 
 简单示例如下：
-```
+```go
 package main
  
 import (

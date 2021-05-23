@@ -20,13 +20,13 @@ topics = ["CentOS7"]
 
 此外还有二个systemctl参数没有与service命令参数对应
 
-```
+```sh
 status: 参数来查看服务运行情况
 reload: 重新加载服务，加载更新后的配置文件（并不是所有服务都支持这个参数，比如network.service）
 ```
 
 应用举例:
-```
+```sh
 #启动网络服务
 systemctl start network.service
 #停止网络服务
@@ -49,7 +49,7 @@ systemctl status network.serivce
 | chkconfig [服务] off | systemctl disable [unit type] | 设备服务禁止开机启动 |
 
 应用举例：
-```
+```sh
 #停止cup电源管理服务
 systemctl stop cups.service
 #禁止cups服务开机启动
@@ -64,23 +64,23 @@ systemctl enable cups.service
 -----------------------
 
 命令格式：
-```
+```sh
 systemctl [command] [--type=TYPE] [--all]
 ```
 参数详解：
 
 command
-```
+```sh
 list-units: 依据unit列出所有启动的unit。加上 --all 才会列出没启动的unit;
 list-unit-files: 依据 /usr/lib/systemd/system/ 内的启动文件，列出启动文件列表
 ```
 `--type=TYPE`
-```
+```sh
 为unit type, 主要有service, socket, target, timer
 ```
 
 应用举例：
-```
+```sh
 systemctl                  #列出所有的系统服务
 systemctl list-units       #列出所有启动unit
 systemctl list-unit-files  #列出所有启动文件
@@ -92,7 +92,7 @@ systemctl list-units --type=target --all   #列出所有target
 
 3、systemctl特殊的用法
 ====================
-```
+```sh
 #查看网络服务是否启动
 systemctl is-active network.service
 #检查网络服务是否设置为开机启动
@@ -143,7 +143,7 @@ systemctl unmask cups.service
 
 5.2、设置运行级别
 --------------
-```
+```sh
 systemctl get-default  #获得当前的运行级别
 systemctl set-default multi-user.target  #设置默认的运行级别为mulit-user
 systemctl isolate multi-user.target      #在不重启的情况下，切换到运行级别mulit-user下
@@ -156,14 +156,14 @@ systemctl isolate graphical.target       #在不重启的情况下，切换到�
 在使用systemctl关闭网络服务时有一些特殊，需要同时关闭unit.servce和unit.socket
 
 使用systemctl查看开启的sshd服务
-```
+```sh
 [root@localhost system]# systemctl list-units --all | grep sshd
 sshd-keygen.service loaded inactive dead        OpenSSH Server Key Generation
 sshd.service        loaded active   running     OpenSSH server daemon
 sshd.socket         loaded inactive dead        OpenSSH Server Socket
 ```
 可以看到系统同时开启了sshd.service和sshd.socket , 如果只闭关了sshd.service那么sshd.socket还在监听网络，在网络上有要求连接sshd时就会启动sshd.service。因此如果要完全关闭sshd服务，需要同时停用sshd.service和sshd.socket。
-```
+```sh
 systemctl stop sshd.service
 systemctl stop sshd.socket
 systemctl disable sshd.service sshd.socket

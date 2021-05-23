@@ -22,7 +22,7 @@ date = "2017-08-23T23:38:09+08:00"
 * -w 去掉DWARF调试信息，得到的程序就不能用gdb调试了
 
 测试代码如下
-```
+```go
 package main
 
 import "fmt"
@@ -51,11 +51,13 @@ func main() {
 
 Mac用户直接brew安装
 
-    brew install upx
+```sh
+brew install upx
+```
 
 upx使用效果如下
 
-```
+```sh
                        Ultimate Packer for eXecutables
                           Copyright (C) 1996 - 2017
 UPX 3.94        Markus Oberhumer, Laszlo Molnar & John Reiser   May 12th 2017

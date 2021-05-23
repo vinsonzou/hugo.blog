@@ -9,7 +9,7 @@ tags = ["Python"]
 
 定义两个方法,分别使用while循环
 
-```
+```py
 def t1():
     while 1:
         pass
@@ -23,7 +23,7 @@ def t2():
 
 **For Python 2.x**
 
-```
+```py
 import dis  #载入反编译模块,Python内置的
 
 dis.dis(t1) #对应的是while 1,下面是输出
@@ -49,7 +49,7 @@ dis.dis(t2) #对应的是while True,下面是输出
 
 **For Python 3.x**
 
-```
+```py
 >>> dis.dis(t1)
   2           0 SETUP_LOOP               4 (to 6)
 
@@ -72,7 +72,7 @@ dis.dis(t2) #对应的是while True,下面是输出
 
 - 在Python 2.x中，True不是关键字，而是在bool类型中定义为1的[built-in global constant](http://docs.python.org/library/constants.html#True)。因此，解释器仍然必须加载True的内容。换句话说，True是可重新分配的。
 
-```
+```py
 Python 2.7.15 (default, Jan 12 2019, 21:07:57)
 [GCC 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.11.45.5)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
@@ -83,7 +83,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 - 在Python 3.x中，True也是[关键字](http://docs.python.org/py3k/reference/lexical_analysis.html#keywords)了。
 
-```
+```py
 Python 3.7.0 (default, Jun 29 2018, 20:13:13)
 [Clang 9.1.0 (clang-902.0.39.2)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.

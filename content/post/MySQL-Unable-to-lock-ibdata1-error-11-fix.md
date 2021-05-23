@@ -9,7 +9,7 @@ topics = ["MySQL"]
 
 A bad shutdown can cause such erros on MySQL.
 
-```
+```sh
 InnoDB: Unable to lock ./ibdata1, error: 11
 InnoDB: Check that you do not already have another mysqld process
 InnoDB: using the same InnoDB data or log files.
@@ -18,7 +18,7 @@ InnoDB: Error in opening ./ibdata1
 
 For solution
 ------------
-```
+```sh
 mv ibdata1 ibdata1.bak
 cp -a ibdata1.bak ibdata1
 service mysqld restart
