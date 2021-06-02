@@ -36,4 +36,4 @@ topics = ["OpenResty"]
     - ipset操作
 - **代理相关**
     - http代理
-    - SNI代理
+    - [SNI代理](/post/nginx-sniproxy/)
