@@ -16,7 +16,7 @@ topics = ["OpenResty"]
     - mTLS支持
 - **命令行执行**
     - [Nginx支持WebP](/post/nginx-support-webp/)
-    - gogs/gitea webhook
+    - [gogs/gitea webhook](/post/gitea-webhook/)
 - **灰度发布**
     - 基于IP（动态IP）
     - 自定义变量
