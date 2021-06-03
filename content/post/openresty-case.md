@@ -35,5 +35,5 @@ topics = ["OpenResty"]
 - **特权进程实践**
     - ipset操作
 - **代理相关**
-    - http代理
+    - [http代理](/post/dynamic-http-proxy/)
     - [SNI代理](/post/nginx-sniproxy/)
