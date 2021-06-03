@@ -27,7 +27,7 @@ topics = ["OpenResty"]
     - SSO认证
     - 安全token
 - **API服务**
-    - IP查询服务
+    - [IP查询服务](/post/nginx-ipip-service/)
     - MQ解耦，对接阿里云RocketMQ
 - **缓存服务**
     - 主动缓存
