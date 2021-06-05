@@ -89,14 +89,15 @@ description = ""
 - [屏蔽字过滤模块](https://github.com/tal-tech/go-zero/tree/master/core/stringx)
 - [gjson](https://github.com/tidwall/gjson)
 - [gendry](https://github.com/didi/gendry)
-- [json-iterator](https://github.com/json-iterator/go)
-- [sio](https://github.com/minio/sio)
+- [⭐️json-iterator](https://github.com/json-iterator/go)
+- [⭐️sio](https://github.com/minio/sio)
 - [cloudflare Go程序平滑重启](https://github.com/cloudflare/tableflip)
 - [adiantum加密库](https://github.com/lukechampine/adiantum)
 - [ants](https://github.com/panjf2000/ants)
 - [freecache](https://github.com/coocood/freecache)
 - [go jsonschema](https://github.com/santhosh-tekuri/jsonschema)
 - [go-attr](https://github.com/ssrathi/go-attr)
+- [⭐️gopacket](https://github.com/google/gopacket)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
