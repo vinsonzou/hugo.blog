@@ -2,8 +2,8 @@
 date = "2020-06-18T13:41:15+08:00"
 title = "CentOS8编译安装MySQL 5.7.30"
 description = ""
-topics = ["mysql"]
-tags = ["mysql","centos8"]
+topics = ["MySQL"]
+tags = ["MySQL","centos8"]
 
 +++
 
