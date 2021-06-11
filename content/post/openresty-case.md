@@ -22,7 +22,7 @@ topics = ["OpenResty"]
     - 自定义变量
 - [微信机器人](/post/nginx-wechat-ops/)
 - **安全相关**
-    - 授权下载
+    - [授权下载](/post/nginx-authorized-download/)
     - 简易CC防护
     - SSO认证
     - 安全token
