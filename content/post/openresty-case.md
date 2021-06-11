@@ -20,7 +20,7 @@ topics = ["OpenResty"]
 - **灰度发布**
     - 基于IP（动态IP）
     - 自定义变量
-- **微信机器人**
+- [微信机器人](/post/nginx-wechat-ops/)
 - **安全相关**
     - 授权下载
     - 简易CC防护
