@@ -11,7 +11,7 @@ description = ""
 - [IP黑名单](https://github.com/firehol/blocklist-ipsets)
 
 ## Python常用模块
-- [requests](https://github.com/kennethreitz/requests)
+- [⭐️requests](https://github.com/kennethreitz/requests)
 - [requests-html](https://github.com/kennethreitz/requests-html)
 - [records](https://github.com/kennethreitz/records)
 - [tablib](https://github.com/kennethreitz/tablib)
@@ -22,6 +22,8 @@ description = ""
 - [EasyOCR](https://github.com/JaidedAI/EasyOCR)
 - [U-2-Net](https://github.com/NathanUA/U-2-Net)
 - [Excel](https://github.com/xlwings/xlwings)
+- [⭐️httpx](https://github.com/encode/httpx)
+- [⭐️parsel](https://github.com/scrapy/parsel)
 
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
@@ -98,6 +100,7 @@ description = ""
 - [go jsonschema](https://github.com/santhosh-tekuri/jsonschema)
 - [go-attr](https://github.com/ssrathi/go-attr)
 - [⭐️gopacket](https://github.com/google/gopacket)
+- [gin-cache](https://github.com/chenyahui/gin-cache)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
@@ -118,3 +121,4 @@ description = ""
 - [gops](https://github.com/google/gops)
 - [go-xss](https://github.com/feiin/go-xss)
 - [go-keyring](https://github.com/zalando/go-keyring)
+- [rust cp](https://github.com/Svetlitski/fcp)
