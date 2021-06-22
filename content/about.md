@@ -101,6 +101,7 @@ description = ""
 - [go-attr](https://github.com/ssrathi/go-attr)
 - [⭐️gopacket](https://github.com/google/gopacket)
 - [gin-cache](https://github.com/chenyahui/gin-cache)
+- [Go Kafka客户端](https://github.com/Shopify/sarama)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
