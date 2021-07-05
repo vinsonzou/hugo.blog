@@ -26,6 +26,7 @@ topics = ["OpenResty"]
     - 简易CC防护
     - SSO认证
     - 安全token
+    - [防止SNI信息泄露](/post/use-ssl_reject_handshake/)
 - **API服务**
     - [IP查询服务](/post/nginx-ipip-service/)
     - [MQ解耦，对接阿里云RocketMQ](/post/nginx-use-mq/)

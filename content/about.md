@@ -24,6 +24,7 @@ description = ""
 - [Excel](https://github.com/xlwings/xlwings)
 - [⭐️httpx](https://github.com/encode/httpx)
 - [⭐️parsel](https://github.com/scrapy/parsel)
+- [flashtext](https://github.com/vi3k6i5/flashtext)
 
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
