@@ -175,3 +175,8 @@ git commit --amend -m "Add comment msg"
 # 线上覆盖提交
 git push origin 分支名称：分支名称 -f
 ```
+
+### 10. 使用signed-off-by
+```sh
+git commit -s -m 'commit msg'
+```
