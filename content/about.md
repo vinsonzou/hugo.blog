@@ -114,7 +114,6 @@ description = ""
 - [MQ: meq](https://github.com/meqio/meq)
 - [Go爬虫框架: colly](https://github.com/gocolly/colly)
 - [coredns](https://github.com/coredns/coredns)
-- [⭐️A native go client for HDFS](https://github.com/colinmarc/hdfs)
 - [redis压测工具](https://github.com/fperf/redis)
 - [Netflix bpftoolkit](https://github.com/Netflix-Skunkworks/bpftoolkit)
 - [mkcert](https://github.com/FiloSottile/mkcert)
@@ -123,4 +122,10 @@ description = ""
 - [gops](https://github.com/google/gops)
 - [go-xss](https://github.com/feiin/go-xss)
 - [go-keyring](https://github.com/zalando/go-keyring)
+- [Zadig CI/CD](https://github.com/koderover/zadig)
+
+## 命令行工具集
+
+- [⭐️zstd](https://github.com/facebook/zstd)
+- [⭐️A native go client for HDFS](https://github.com/colinmarc/hdfs)
 - [rust cp](https://github.com/Svetlitski/fcp)
