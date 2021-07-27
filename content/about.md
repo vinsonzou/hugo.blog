@@ -25,6 +25,7 @@ description = ""
 - [⭐️httpx](https://github.com/encode/httpx)
 - [⭐️parsel](https://github.com/scrapy/parsel)
 - [flashtext](https://github.com/vi3k6i5/flashtext)
+- [pyinotify](https://github.com/seb-m/pyinotify)
 
 ## Python Web开发
 - [Flask](https://github.com/pallets/flask)
@@ -76,6 +77,7 @@ description = ""
     - [微信对接解密/加密](https://github.com/TheNorthMemory/WXBizMsgCrypt)
     - [lua-resty-multiplexer](https://github.com/fffonion/lua-resty-multiplexer)
     - [lua-resty-sniproxy](https://github.com/fffonion/lua-resty-sniproxy)
+    - [lua-casbin](https://github.com/casbin/lua-casbin)
 
 ## ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
@@ -123,6 +125,13 @@ description = ""
 - [go-xss](https://github.com/feiin/go-xss)
 - [go-keyring](https://github.com/zalando/go-keyring)
 - [Zadig CI/CD](https://github.com/koderover/zadig)
+- [clickhouse管理工具ckman](https://github.com/housepower/ckman)
+- [google udp proxy](https://github.com/googleforgames/quilkin)
+- [Convert your ascii diagram scribbles into happy little SVG](https://github.com/ivanceras/svgbob)
+
+## 安全工具
+
+- [trivy](https://github.com/aquasecurity/trivy)
 
 ## 命令行工具集
 
