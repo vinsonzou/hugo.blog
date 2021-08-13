@@ -24,7 +24,7 @@ topics = ["OpenResty"]
 - **安全相关**
     - [授权下载](/post/nginx-authorized-download/)
     - 简易CC防护
-    - SSO认证
+    - [Gitea通过飞书SSO认证](https://gist.github.com/vinsonzou/6ce186914171736becb5e35ebdf806e3)
     - 安全token
     - [防止SNI信息泄露](/post/use-ssl_reject_handshake/)
 - **API服务**
