@@ -96,6 +96,7 @@ description = ""
 - [gendry](https://github.com/didi/gendry)
 - [⭐️json-iterator](https://github.com/json-iterator/go)
 - [⭐️sio](https://github.com/minio/sio)
+- [⭐️age](https://github.com/FiloSottile/age)
 - [cloudflare Go程序平滑重启](https://github.com/cloudflare/tableflip)
 - [adiantum加密库](https://github.com/lukechampine/adiantum)
 - [ants](https://github.com/panjf2000/ants)
