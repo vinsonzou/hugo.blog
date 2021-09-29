@@ -51,11 +51,20 @@ description = ""
     - [lua-resty-balancer](https://github.com/agentzh/lua-resty-balancer)
     - [lua-resty-shell](https://github.com/openresty/lua-resty-shell)
 
+- APISIX维护库
+    - [apisix](https://github.com/apache/apisix)
+    - [lua-resty-http](https://github.com/api7/lua-resty-http)
+    - [lua-resty-etcd](https://github.com/api7/lua-resty-etcd)
+    - [lua-resty-ipmatcher(hash实现)](https://github.com/api7/lua-resty-ipmatcher)
+    - [jsonschema](https://github.com/api7/jsonschema)
+    - [lua-resty-prometheus](https://github.com/api7/lua-resty-prometheus)
+    - [lua-snowflake](https://github.com/api7/lua-snowflake)
+    - [lua-var-nginx-module](https://github.com/api7/lua-var-nginx-module)
+
 - 第三方库
     - [lua-resty-logger-socket](https://github.com/cloudflare/lua-resty-logger-socket)
     - [lua-aho-corasick](https://github.com/cloudflare/lua-aho-corasick)
     - [nginx-google-oauth](https://github.com/cloudflare/nginx-google-oauth)
-    - [lua-resty-http](https://github.com/ledgetech/lua-resty-http)
     - [lua-resty-shell](https://github.com/juce/lua-resty-shell)
     - [lua-resty-template](https://github.com/bungle/lua-resty-template)
     - [lua-resty-checkups](https://github.com/upyun/lua-resty-checkups)
@@ -67,14 +76,10 @@ description = ""
     - [jxwaf](https://github.com/jx-sec/jxwaf)
     - [lua-resty-mail](https://github.com/GUI/lua-resty-mail)
     - [lua-resty-resolver](https://github.com/jkeys089/lua-resty-resolver)
-    - [apisix](https://github.com/apache/apisix)
-    - [lua-resty-etcd](https://github.com/api7/lua-resty-etcd)
-    - [lua-resty-ipmatcher(hash实现)](https://github.com/api7/lua-resty-ipmatcher)
-    - [jsonschema](https://github.com/api7/jsonschema)
-    - [lua-resty-acme](https://github.com/fffonion/lua-resty-acme)
     - [skywalking-nginx-lua](https://github.com/apache/skywalking-nginx-lua)
     - [xml2lua](https://github.com/manoelcampos/xml2lua)
-    - [微信对接解密/加密](https://github.com/TheNorthMemory/WXBizMsgCrypt)
+    - [微信对接解密/加密](https://github.com/vinsonzou/WXBizMsgCrypt)
+    - [lua-resty-acme](https://github.com/fffonion/lua-resty-acme)
     - [lua-resty-multiplexer](https://github.com/fffonion/lua-resty-multiplexer)
     - [lua-resty-sniproxy](https://github.com/fffonion/lua-resty-sniproxy)
     - [lua-casbin](https://github.com/casbin/lua-casbin)
@@ -107,6 +112,7 @@ description = ""
 - [gin-cache](https://github.com/chenyahui/gin-cache)
 - [Go Kafka客户端](https://github.com/Shopify/sarama)
 - [速度最快的 base64 库](https://github.com/cristalhq/base64)
+- [go-quartz](https://github.com/reugn/go-quartz)
 
 ## Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
