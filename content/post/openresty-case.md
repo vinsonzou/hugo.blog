@@ -13,7 +13,7 @@ topics = ["OpenResty"]
     - 动态证书
     - OCSP缓存
     - ssl分布式session
-    - mTLS支持
+    - [mTLS支持](/post/openresty-mtls/)
 - **命令行执行**
     - [Nginx支持WebP](/post/nginx-support-webp/)
     - [gogs/gitea webhook](/post/gitea-webhook/)
