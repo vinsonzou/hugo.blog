@@ -16,7 +16,7 @@ topics = ["OpenResty"]
     - lua-nginx-module
     - [lua-resty-http](https://github.com/ledgetech/lua-resty-http)
     - [lua实现微信加密库](https://github.com/vinsonzou/WXBizMsgCrypt)
-    - [xml2lua](https://github.com/manoelcampos/xml2lua)
+    - [xml2lua ≤ v1.4-5](https://github.com/manoelcampos/xml2lua)
 - 依赖服务
     - 企业微信
 
