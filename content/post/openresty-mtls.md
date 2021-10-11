@@ -76,3 +76,16 @@ location /t {
 
 **1. 多CA证书如何使用**
 > 一个location下同时使用系统CA和自签名CA时，将CA合并成1个文件即可，参考系统的 `/etc/pki/tls/certs/ca-bundle.crt`
+
+**2. client证书兼容性测试结果**
+
+CA证书和Server证书都是ecdsa 256类型
+
+| 系统版本 | 客户端         | 版本   | client证书类型 | 能否使用 |
+| -------- | -------------- | ------ | -------------- | -------- |
+| CentOS 7 | curl           | 7.29.0 | ecdsa 256      | ❌        |
+| CentOS 8 | curl           | 7.61.1 | ecdsa 256      | ✅        |
+| CentOS 7 | curl           | 7.29.0 | rsa 2048       | ✅        |
+| CentOS 8 | curl           | 7.61.1 | rsa 2048       | ✅        |
+| -        | lua-resty-http | 0.2.0  | ecdsa 256      | ✅        |
+| -        | lua-resty-http | 0.2.0  | rsa 2048       | ✅        |
