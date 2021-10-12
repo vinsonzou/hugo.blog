@@ -36,7 +36,7 @@ topics = ["OpenResty"]
     - 主动缓存
     - SDK缓存
 - **特权进程实践**
-    - ipset操作
+    - [ipsec操作](/post/openresty-privileged-agent/)
 - **代理相关**
     - [http代理](/post/dynamic-http-proxy/)
     - [SNI代理](/post/nginx-sniproxy/)
