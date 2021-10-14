@@ -33,13 +33,12 @@ func main() {
 
 编译方式及文件大小对比结果如下
 
-{{< pure_table
-"编译参数                      | 大小   "
-"go build(默认)              | 1.6M "
-"go build -ldflags -s      | 1.6M "
-"go build -ldflags \"-s -w\" | 1.1M "
-"go build -ldflags -w      | 1.1M "
->}}
+|编译参数                      | 大小   |
+|-|-|
+|go build(默认)              | 1.6M |
+|go build -ldflags -s      | 1.6M |
+|go build -ldflags "-s -w" | 1.1M |
+|go build -ldflags -w      | 1.1M |
 
 > 测试环境: go 1.8.3 on macOS 10.12.6
 > 不建议s和w同时使用。

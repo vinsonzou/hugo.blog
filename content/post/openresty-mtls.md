@@ -80,12 +80,11 @@ location /t {
 
 CA证书和Server证书都是ecdsa 256类型
 
-{{< pure_table
-"系统版本|客户端|版本|client证书类型| 能否使用"
-"CentOS 7 | curl           | 7.29.0 | ecdsa 256      | ❌        "
-"CentOS 8 | curl           | 7.61.1 | ecdsa 256      | ✅        "
-"CentOS 7 | curl           | 7.29.0 | rsa 2048       | ✅        "
-"CentOS 8 | curl           | 7.61.1 | rsa 2048       | ✅        "
-"-        | lua-resty-http | 0.2.0  | ecdsa 256      | ✅        "
-"-        | lua-resty-http | 0.2.0  | rsa 2048       | ✅        "
->}}
+|系统版本|客户端|版本|client证书类型| 能否使用|
+|:-:|:-:|:-:|:-:|:-:|
+|CentOS 7 | curl           | 7.29.0 | ecdsa 256      | ❌        |
+|CentOS 8 | curl           | 7.61.1 | ecdsa 256      | ✅        |
+|CentOS 7 | curl           | 7.29.0 | rsa 2048       | ✅        |
+|CentOS 8 | curl           | 7.61.1 | rsa 2048       | ✅        |
+|-        | lua-resty-http | 0.2.0  | ecdsa 256      | ✅        |
+|-        | lua-resty-http | 0.2.0  | rsa 2048       | ✅        |
