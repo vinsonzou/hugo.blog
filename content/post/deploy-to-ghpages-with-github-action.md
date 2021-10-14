@@ -22,19 +22,17 @@ hugo手动部署到github pages流程:
 
 ## 详细步骤
 
-首先点击github头像在下拉栏里进入`Settings - Developer Settings - Personal access tokens`
+1、首先点击github头像在下拉栏里进入`Settings - Developer Settings - Personal access tokens`
 选择`Generate new token`
-![action-01](/img/github-action-01.png)
 
-在上方填入名字，并勾选repo和action选项，如下图
-![action-02](/img/github-action-02.png)
+2、填入名字，并勾选repo和workflow选项，如下图
+![](/img/github-action-01.png)
 
-然后执行以下几步：
+3、在源码repo配置中添加Secret
+![](/img/github-action-02.png)
 
-在源码repo里
-- 在repo根目录新建嵌套的两个文件夹.github/workflows
-- 在workflows里新建一个后缀为.yml的配置文件，名字自取
-- 写进去以下配置（从hugo官方文档修改而来）
+4、在源码repo里添加如下配置
+- .github/workflows/gh-pages.yml
 
 ```yml
 name: github pages # 名字自取
@@ -42,7 +40,7 @@ name: github pages # 名字自取
 on:
   push:
     branches:
-      - master  # 这里的意思是当 main分支发生push的时候，运行下面的jobs，这里先改为github-actions
+      - master  # 这里的意思是当 master 分支发生push的时候，运行下面的jobs
 
 jobs:
   build-deploy: # 任务名自取
