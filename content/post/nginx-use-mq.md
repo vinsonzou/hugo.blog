@@ -3,7 +3,6 @@ description = ""
 date = "2021-06-03T15:08:08+08:00"
 title = "lua发布消息至RocketMQ解耦"
 tags = ["OpenResty", "Nginx", "RocketMQ"]
-topics = ["OpenResty"]
 
 +++
 

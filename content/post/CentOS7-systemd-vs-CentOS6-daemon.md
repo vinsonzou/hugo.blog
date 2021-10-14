@@ -3,7 +3,6 @@ date = "2016-08-06T13:54:53+08:00"
 description = ""
 tags = ["systemd"]
 title = "Centos 7.x systemd对比Centos 6.x daemon"
-topics = ["CentOS7"]
 
 +++
 

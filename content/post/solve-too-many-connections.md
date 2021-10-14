@@ -1,7 +1,6 @@
 +++
 title = "不重启解决Too Many Connections"
 description = ""
-topics = ["MySQL"]
 tags = ["MySQL"]
 date = "2017-01-07T19:57:32+08:00"
 

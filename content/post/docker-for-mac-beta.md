@@ -2,7 +2,6 @@
 date = "2016-05-20T00:05:35+08:00"
 tags = ["Docker"]
 title = "Docker for Mac Beta尝鲜"
-topics = ["Docker"]
 
 +++
 

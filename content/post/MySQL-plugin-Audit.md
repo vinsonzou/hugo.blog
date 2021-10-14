@@ -3,7 +3,6 @@ description = ""
 date = "2021-06-08T14:10:08+08:00"
 title = "MySQL插件之审计"
 tags = ["MySQL", "等保"]
-topics = ["MySQL"]
 
 +++
 

@@ -3,7 +3,6 @@ date = "2016-08-06T23:51:26+08:00"
 description = ""
 tags = []
 title = "删除osd的正确方式"
-topics = ["Ceph"]
 
 +++
 

@@ -2,7 +2,6 @@
 date = "2018-10-16T16:27:12+08:00"
 title = "Python数据库连接池实例--PooledDB"
 description = ""
-topics = ["Python","MySQL"]
 tags = ["Python","MySQL"]
 
 +++

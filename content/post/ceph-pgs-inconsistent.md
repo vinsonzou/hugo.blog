@@ -3,7 +3,6 @@ date = "2016-08-17T23:44:59+08:00"
 description = ""
 tags = []
 title = "ceph pgs inconsistent"
-topics = ["Ceph"]
 
 +++
 

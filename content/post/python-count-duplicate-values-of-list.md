@@ -1,7 +1,6 @@
 +++
 title = "[python]统计列表中重复项的出现次数"
 tags = []
-topics = ["Python"]
 description = ""
 date = "2016-10-30T10:27:24+08:00"
 

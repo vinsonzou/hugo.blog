@@ -2,7 +2,6 @@
 date = "2020-06-12T13:12:06+08:00"
 title = "CentOS7上如何支持安装CentOS8 VM"
 description = ""
-topics = ["libvirt"]
 tags = ["libvirt","kvm"]
 
 +++

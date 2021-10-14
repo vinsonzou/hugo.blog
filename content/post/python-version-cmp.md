@@ -1,7 +1,6 @@
 +++
 title = "Python版本号比较"
 description = ""
-topics = []
 tags = ["Python"]
 date = "2017-07-23T16:13:10+08:00"
 

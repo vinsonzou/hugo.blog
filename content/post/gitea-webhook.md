@@ -3,7 +3,6 @@ description = ""
 date = "2021-06-03T10:08:08+08:00"
 title = "Gogs/Gitea webhook支持"
 tags = ["OpenResty", "Nginx", "Gogs", "Gitea"]
-topics = ["OpenResty"]
 
 +++
 

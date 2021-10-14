@@ -2,7 +2,6 @@
 description = ""
 date = "2019-08-23T15:05:22+08:00"
 title = "GitHub supports WebAuthn"
-topics = []
 tags = ["webauthn"]
 
 +++

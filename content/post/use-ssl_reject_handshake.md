@@ -3,7 +3,6 @@ description = ""
 date = "2021-07-04T10:08:08+08:00"
 title = "防止SNI信息泄露"
 tags = ["Nginx"]
-topics = ["Nginx"]
 
 +++
 

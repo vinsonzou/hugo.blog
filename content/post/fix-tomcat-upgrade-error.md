@@ -2,7 +2,6 @@
 date = "2017-03-27T13:08:25+08:00"
 title = "Tomcat 7.0.76 Invalid character found in the request target"
 description = ""
-topics = []
 tags = ["tomcat"]
 
 +++

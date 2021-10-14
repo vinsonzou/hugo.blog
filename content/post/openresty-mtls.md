@@ -3,7 +3,6 @@ description = ""
 date = "2021-09-29T13:08:08+08:00"
 title = "使用OpenResty mTLS认证"
 tags = ["OpenResty"]
-topics = ["OpenResty"]
 
 +++
 

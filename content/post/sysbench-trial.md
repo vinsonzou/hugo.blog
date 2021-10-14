@@ -3,7 +3,6 @@ description = ""
 date = "2021-06-08T10:10:08+08:00"
 title = "sysbench试用"
 tags = ["MySQL", "sysbench"]
-topics = ["MySQL"]
 
 +++
 

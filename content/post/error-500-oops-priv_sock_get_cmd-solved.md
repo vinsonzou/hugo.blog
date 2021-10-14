@@ -3,7 +3,6 @@ tags = ["vsftpd"]
 date = "2017-07-23T16:21:45+08:00"
 title = "Error: 500 OOPS: priv_sock_get_cmd [SOLVED]"
 description = ""
-topics = ["Troubleshooting"]
 
 +++
 

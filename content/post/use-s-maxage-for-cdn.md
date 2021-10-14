@@ -3,7 +3,6 @@ description = ""
 date = "2021-06-14T11:18:08+08:00"
 title = "巧用 cache-control: s-maxage 优化CDN和浏览器缓存同步"
 tags = ["cdn"]
-topics = [""]
 
 +++
 

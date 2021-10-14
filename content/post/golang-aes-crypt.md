@@ -2,7 +2,6 @@
 description = ""
 date = "2021-05-18T10:08:00+08:00"
 title = "golang encrypt/decrypt by MacOS keychain"
-topics = ["golang"]
 tags = ["golang"]
 
 +++

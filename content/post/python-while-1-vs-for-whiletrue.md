@@ -2,7 +2,6 @@
 date = "2019-01-23T17:46:06+08:00"
 title = "Python的while 1跟while True到底有什么区别?"
 description = ""
-topics = ["Python"]
 tags = ["Python"]
 
 +++

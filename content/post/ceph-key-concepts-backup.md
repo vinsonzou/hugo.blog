@@ -3,7 +3,6 @@ date = "2016-08-26T14:38:12+08:00"
 description = ""
 tags = []
 title = "Ceph核心概念备忘录"
-topics = ["Ceph"]
 
 +++
 
