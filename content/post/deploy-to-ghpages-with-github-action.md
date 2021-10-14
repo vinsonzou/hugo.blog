@@ -9,8 +9,8 @@ tags = ["Hugo"]
 ## 目的
 
 hugo手动部署到github pages流程:
-- 使用hugo或hugo --minify生成静态网页
-- 将静态网页push到建好的github pages repo中，一般是<username>/<username>.github.io
+- 使用hugo生成静态网页
+- 将静态网页push到建好的github pages repo中，一般是`<username>/<username>.github.io`
 
 本文的目的就是使用github action自动部署github pages。
 
