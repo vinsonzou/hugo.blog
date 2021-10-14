@@ -25,7 +25,7 @@ jobs:
         with:
           external_repository: vinsonzou/vinsonzou.github.com
           personal_token: ${{ secrets.ACTION_ACCESS_TOKEN }}
-          CNAME: ops.m114.org
+          cname: ops.m114.org
           publish_branch: master
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}
