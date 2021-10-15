@@ -3,6 +3,7 @@ description = ""
 date = "2021-06-03T13:08:08+08:00"
 title = "Nginx实现ip查询服务"
 tags = ["OpenResty", "Nginx"]
+categories = ["OpenResty"]
 
 +++
 

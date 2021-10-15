@@ -3,6 +3,7 @@ description = ""
 date = "2021-06-02T10:18:08+08:00"
 title = "使用Nginx做SNI反向代理"
 tags = ["OpenResty", "SNI"]
+categories = ["OpenResty"]
 
 +++
 

@@ -3,6 +3,7 @@ description = ""
 date = "2021-06-11T10:08:08+08:00"
 title = "lua实现微信机器人"
 tags = ["OpenResty"]
+categories = ["OpenResty"]
 
 +++
 

@@ -3,6 +3,7 @@ date = "2017-07-03T16:27:12+08:00"
 title = "golang sync.WaitGroup解决goroutine同步"
 description = ""
 tags = ["golang"]
+categories = ["golang"]
 
 +++
 

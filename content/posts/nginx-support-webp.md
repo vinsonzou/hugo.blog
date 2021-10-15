@@ -3,6 +3,7 @@ description = ""
 date = "2021-06-02T10:08:08+08:00"
 title = "Nginx支持WebP"
 tags = ["OpenResty", "WebP"]
+categories = ["OpenResty"]
 
 +++
 

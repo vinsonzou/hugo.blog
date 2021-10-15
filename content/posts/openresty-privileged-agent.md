@@ -3,6 +3,7 @@ description = ""
 date = "2021-10-08T11:13:08+08:00"
 title = "使用OpenResty reload ipsec服务"
 tags = ["OpenResty"]
+categories = ["OpenResty"]
 
 +++
 

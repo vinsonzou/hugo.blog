@@ -1,8 +1,9 @@
 +++
 title = "go如何编译出更小的执行文件?"
 description = ""
-tags = ["golang"]
 date = "2017-08-23T23:38:09+08:00"
+tags = ["golang"]
+categories = ["golang"]
 
 +++
 

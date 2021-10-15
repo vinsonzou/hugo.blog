@@ -1,8 +1,9 @@
 +++
 description = ""
-date = "2021-06-01T10:08:08+08:00"
+date = 2021-06-01T10:08:08+08:00
 title = "本人OpenResty实践集合"
 tags = ["OpenResty", "Nginx"]
+categories = ["OpenResty"]
 
 +++
 
