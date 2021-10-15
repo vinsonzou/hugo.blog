@@ -1,52 +1,137 @@
-baseurl = "https://ops.m114.org/"
-languageCode = "zh-cn"
-title = "ops"
-theme = "blackburn"
+baseURL = "https://ops.m114.org/"
+defaultContentLanguage = "zh-cn"
+languageCode = "zh-CN"
+hasCJKLanguage = true
+title = "cloudSky's 小站"
 
-# Shown in the side menu
-copyright = "&copy; 2014-2021. All rights reserved."
-canonifyurls = true
-paginate = 10
-disablePathToLower = true
-
-[indexes]
-  tag = "tags"
+theme = "LoveIt"
 
 [params]
-  # Shown in the home page
-  subtitle = "records of learning."
-  brand = "Ops"
-  disqus = "vinsoncou"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  dateFormat = "2006/01/02, 15:04"
+  version = "0.2.X"
+  defaultTheme = "auto"
+  dateFormat = "2006-01-02"
+  description = "Linux运维"
+  keywords = ["OpenResty", "k8s", "docker", "go"]
+
+  [params.home]
+    rss = 10
+    [params.home.profile]
+      enable = true
+      title = "cloudSky's 小站"
+      subtitle = "日常运维记录"
+      typeit = true
+      social = true
+  [params.social]
+    GitHub = "vinsonzou"
+    RSS = true
+  [params.footer]
+    enable = true
+    copyright = true
+    author = true
+    since = 2014
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  [params.page]
+    # 是否在主页隐藏一篇文章
+    hiddenFromHomePage = false
+    # 是否在搜索结果中隐藏一篇文章
+    hiddenFromSearch = false
+    # 是否使用 twemoji
+    twemoji = false
+    # 是否使用 lightgallery
+    lightgallery = false
+    # 是否使用 ruby 扩展语法
+    ruby = true
+    # 是否使用 fraction 扩展语法
+    fraction = true
+    # 是否使用 fontawesome 扩展语法
+    fontawesome = true
+    # 是否在文章页面显示原始 Markdown 文档链接
+    linkToMarkdown = false
+    # 是否在 RSS 中显示全文内容
+    rssFullText = false
+    # 目录配置
+    [params.page.toc]
+      # 是否使用目录
+      enable = true
+      # 是否保持使用文章前面的静态目录
+      keepStatic = false
+      # 是否使侧边目录自动折叠展开
+      auto = false
+    [params.page.code]
+      copy = true
+      maxShownLines = 10
+    # 文章页面的分享信息设置
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      CSDN = true
+      Weibo = true
+    # 评论系统设置
+    [params.page.comment]
+      enable = true
+      # Utterances comment 评论系统设置 (https://utteranc.es/)
+      [params.page.comment.utterances]
+        enable = true
+        # owner/repo
+        repo = "vinsonzou/vinsonzou.github.com"
+        issueTerm = "pathname"
+        label = ""
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
 
 [menu]
-  # Shown in the side menu.
   [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 1
-    identifier = "about"
-    url = "/about/"
-  [[menu.main]]
-    name = "Posts"
+    identifier = "posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 2
-    identifier = "post"
-    url = "/post/"
+    post = ""
+    name = "所有文章"
+    url = "/posts/"
+    title = ""
+    weight = 1
   [[menu.main]]
-    name = "Tags"
+    identifier = "tags"
     pre = "<i class='fa fa-tags fa-fw'></i>"
-    weight = 3
-    identifier = "tag"
+    post = ""
+    name = "标签"
     url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "分类"
+    url = "/categories/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "links"
+    pre = "<i class='fa fa-link fa-fw'></i>"
+    post = ""
+    name = ""
+    url = "/links/"
+    title = ""
+    weight = 4
 
-[social]
-github = "vinsonzou"
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[author]
+  name = "CloudSky"
+  email = ""
+  link = "https://ops.m114.org"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks 配置
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
