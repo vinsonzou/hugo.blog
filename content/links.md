@@ -1,16 +1,15 @@
 +++
-title = "About"
+title = "收藏链接"
 date = "2016-10-22"
-sidemenu = "true"
 description = ""
 +++
 
-## 收藏站点
+### 收藏站点
 - [OpenResty最佳实践](https://moonbingbing.gitbooks.io/openresty-best-practices/content/index.html)
 - [Jerry Qu HTTPS最佳实践](https://imququ.com)
 - [IP黑名单](https://github.com/firehol/blocklist-ipsets)
 
-## Python常用模块
+### Python常用模块
 - [⭐️requests](https://github.com/kennethreitz/requests)
 - [requests-html](https://github.com/kennethreitz/requests-html)
 - [records](https://github.com/kennethreitz/records)
@@ -27,12 +26,12 @@ description = ""
 - [flashtext](https://github.com/vi3k6i5/flashtext)
 - [pyinotify](https://github.com/seb-m/pyinotify)
 
-## Python Web开发
+### Python Web开发
 - [Flask](https://github.com/pallets/flask)
 - [Flask-Orator](https://github.com/sdispater/flask-orator)
 - [Sanic](https://github.com/channelcat/sanic)
 
-## ngx_lua常用模块
+### ngx_lua常用模块
 - OpenResty官方库
     - [lua-resty-core](https://github.com/openresty/lua-resty-core)
     - [lua-resty-string](https://github.com/openresty/lua-resty-string)
@@ -70,7 +69,6 @@ description = ""
     - [lua-resty-checkups](https://github.com/upyun/lua-resty-checkups)
     - [lua-resty-jit-uuid](https://github.com/thibaultcha/lua-resty-jit-uuid)
     - [lua-resty-mlcache](https://github.com/thibaultcha/lua-resty-mlcache)
-    - [lua-resty-iputils(遍历)](https://github.com/hamishforbes/lua-resty-iputils)
     - [lua-resty-rsa](https://github.com/spacewander/lua-resty-rsa)
     - [lua-resty-hmac](https://github.com/jkeys089/lua-resty-hmac)
     - [jxwaf](https://github.com/jx-sec/jxwaf)
@@ -84,15 +82,15 @@ description = ""
     - [lua-resty-sniproxy](https://github.com/fffonion/lua-resty-sniproxy)
     - [lua-casbin](https://github.com/casbin/lua-casbin)
 
-## ngx_lua Web开发
+### ngx_lua Web开发
 - [Lor](https://github.com/sumory/lor)
 - [Learn Lua in 15 Minutes](http://tylerneylon.com/a/learn-lua/)
 
-## Go Web开发
+### Go Web开发
 - [Gin](https://github.com/gin-gonic/gin)
 - [fiber](https://github.com/gofiber/fiber)
 
-## Go常用模块
+### Go常用模块
 - [otp](https://github.com/pquerna/otp)
 - [viper](https://github.com/spf13/viper)
 - [屏蔽字过滤服务](https://github.com/sunny352/wego)
@@ -113,8 +111,9 @@ description = ""
 - [Go Kafka客户端](https://github.com/Shopify/sarama)
 - [速度最快的 base64 库](https://github.com/cristalhq/base64)
 - [go-quartz](https://github.com/reugn/go-quartz)
+- [goRequest](https://github.com/parnurzeal/gorequest)
 
-## Tools
+### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
 - [Go BitTorrent Tracker](https://github.com/GrappigPanda/notorious)
 - [Go Full-featured BitTorrent client package and utilities](https://github.com/anacrolix/torrent)
@@ -139,11 +138,11 @@ description = ""
 - [制作小巧 Docker 镜像的终极奥义，或许是使用基于 Google Bazel 构建出的 Docker 通用镜像作为镜像基础，最小的镜像比 Alpine 还要小的多，你可以在项目网站找到 Java、Python、Node、Go、Rust 的示例。](https://github.com/GoogleContainerTools/distroless)
 - [Element UI表单设计及代码生成器](https://github.com/JakHuang/form-generator)
 
-## 安全工具
+### 安全工具
 
 - [trivy](https://github.com/aquasecurity/trivy)
 
-## 命令行工具集
+### 命令行工具集
 
 - [⭐️zstd](https://github.com/facebook/zstd)
 - [⭐️A native go client for HDFS](https://github.com/colinmarc/hdfs)
