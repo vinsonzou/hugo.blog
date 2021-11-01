@@ -45,7 +45,7 @@ uint64: 0 ~ 18446744073709551615
     - int64, err := strconv.ParseInt(string, 10, 64)
 
 - string转成uint64
-    - uint64, err := strconv.ParseUInt(string, 10, 64)
+    - uint64, err := strconv.ParseUint(string, 10, 64)
 
 - int转成string
     - string := strconv.Itoa(int)
