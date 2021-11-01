@@ -2,7 +2,7 @@
 title: "Golang中uint、int, int8, int16, int32, int64区别"
 subtitle: ""
 date: 2021-10-20T16:47:09+08:00
-lastmod: 2021-10-20T16:47:09+08:00
+lastmod: 2021-11-01T10:10:00+08:00
 description: ""
 
 tags: ["golang"]
@@ -33,3 +33,28 @@ uint32: 0 ~ 4294967295
 uint64: 0 ~ 18446744073709551615
 ```
 > 由于Go语言中各int类型的取值范围不同，各int类型间进行数据转换时，会存在数据截断的问题，在使用过程中要引起注意。
+
+拓展:
+
+**字符串和各种int类型之间的相互转换方式**
+
+- string转成int
+    - int, err := strconv.Atoi(string)
+
+- string转成int64
+    - int64, err := strconv.ParseInt(string, 10, 64)
+
+- string转成uint64
+    - uint64, err := strconv.ParseUInt(string, 10, 64)
+
+- int转成string
+    - string := strconv.Itoa(int)
+
+- int64转成string
+    - string := strconv.FormatInt(int64, 10)
+
+- uint64转成string(10进制)
+    - string := strconv.FormatUint(uint64, 10)
+
+- uint64转成string(16进制)
+    - string := strconv.FormatUint(uint64, 16)
