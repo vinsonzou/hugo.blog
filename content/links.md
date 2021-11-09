@@ -148,3 +148,4 @@ description = ""
 - [⭐️A native go client for HDFS](https://github.com/colinmarc/hdfs)
 - [rust cp](https://github.com/Svetlitski/fcp)
 - [BLAKE3 b3sum](https://github.com/BLAKE3-team/BLAKE3)
+- [⭐️Minisign](https://github.com/jedisct1/minisign)
