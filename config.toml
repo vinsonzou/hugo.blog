@@ -4,7 +4,7 @@ languageCode = "zh-CN"
 hasCJKLanguage = true
 title = "cloudSky's 小站"
 
-theme = "LoveIt"
+theme = "DoIt"
 
 [params]
   version = "0.2.X"
