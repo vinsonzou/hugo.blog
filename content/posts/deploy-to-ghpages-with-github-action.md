@@ -1,10 +1,12 @@
-+++
-description = ""
-date = "2021-10-14T16:35:08+08:00"
-title = "Hugo使用Github Action自动部署到Github Pages"
-tags = ["Hugo"]
+---
+title: "Hugo使用Github Action自动部署到Github Pages"
+subtitle: ""
+date: 2021-10-14T16:35:08+08:00
+lastmod: 2021-12-09T20:18:13+08:00
+description: ""
 
-+++
+tags: ["Hugo"]
+---
 
 ## 目的
 
@@ -48,6 +50,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2	# 引用actions/checkout这个action，与所在的github仓库同名
+        with:
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo	# 步骤名自取
         uses: peaceiris/actions-hugo@v2	# hugo官方提供的action，用于在任务环境中获取hugo
@@ -68,3 +73,7 @@ jobs:
           publish_branch: master # 发布到哪个branch
           commit_message: ${{ github.event.head_commit.message }}
 ```
+
+## 更新记录
+
+- 2021-12-09: checkout支持submodules
