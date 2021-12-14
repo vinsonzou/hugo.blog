@@ -137,6 +137,8 @@ description = ""
 - [Convert your ascii diagram scribbles into happy little SVG](https://github.com/ivanceras/svgbob)
 - [制作小巧 Docker 镜像的终极奥义，或许是使用基于 Google Bazel 构建出的 Docker 通用镜像作为镜像基础，最小的镜像比 Alpine 还要小的多，你可以在项目网站找到 Java、Python、Node、Go、Rust 的示例。](https://github.com/GoogleContainerTools/distroless)
 - [Element UI表单设计及代码生成器](https://github.com/JakHuang/form-generator)
+- [jsPolicy - Easier & Faster Kubernetes Policies](https://github.com/loft-sh/jspolicy)
+- [云基准压测工具](https://github.com/cloud-bulldozer/benchmark-operator)
 
 ### 安全工具
 
@@ -149,3 +151,4 @@ description = ""
 - [rust cp](https://github.com/Svetlitski/fcp)
 - [BLAKE3 b3sum](https://github.com/BLAKE3-team/BLAKE3)
 - [⭐️Minisign](https://github.com/jedisct1/minisign)
+- [plow 高性能图形化压测工具](https://github.com/six-ddc/plow)
