@@ -10,12 +10,12 @@ categories: ["golang"]
 ---
 
 在linux中有一个tail命令，`tail -f` 可以实时的监控文件新增加的内容，如果用代码实现这个逻辑，可以使用这个包
-```
+```bash
 go get github.com/hpcloud/tail
 ```
 
 示例代码
-```
+```go
 package main
 
 import (
