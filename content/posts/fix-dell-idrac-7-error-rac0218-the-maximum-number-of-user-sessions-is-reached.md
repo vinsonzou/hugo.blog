@@ -1,10 +1,13 @@
-+++
-date = "2016-07-12T23:29:35+08:00"
-description = ""
-tags = ["idrac"]
-title = "R420服务器idrac连接用户数超限制"
+---
+title: "R420服务器idrac连接用户数超限制"
+subtitle: ""
+date: 2016-07-12T23:29:35+08:00
+lastmod: 2016-07-12T23:29:35+08:00
+description: ""
 
-+++
+tags: ["idrac"]
+categories: ["Troubleshooting"]
+---
 
 Dell R420服务器中，比较经常出现idrac无法连接，或者连接用户数超限(`RAC0218错误`)的问题，升级iDrac卡firmware至1.57.57即可解决。
 
@@ -13,6 +16,7 @@ Dell R420服务器中，比较经常出现idrac无法连接，或者连接用户
 - Fix for issues that cause iDRAC7 sluggish responsiveness after a prolonged period of time (approx. 45-100 days, depending on the usage). In some cases, if the iDRAC is not reset, the iDRAC may become unresponsive and requires a server AC Power on reset. This issue was introduced in firmware release 1.50.50 and fixed in 1.56.55.
 
 *RAC0218: The maximum number of user sessions is reached.*
+
 ![](/img/Dell_iDRAC_7_Enterprise_RAC0218_-_The_maximum_number_of_user_sessions_is_reached.jpg)
 
 **2种临时解决方法(idrac重新初始化)**

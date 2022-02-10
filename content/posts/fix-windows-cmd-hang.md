@@ -6,7 +6,7 @@ lastmod: 2021-12-14T13:50:03+08:00
 description: ""
 
 tags: ["golang"]
-categories: ["golang"]
+categories: ["golang", "Troubleshooting"]
 ---
 
 最近遇到一个很尴尬的现象，现象如下:

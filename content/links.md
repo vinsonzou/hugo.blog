@@ -115,6 +115,8 @@ description = ""
 - [easyraft](https://github.com/ksrichard/easyraft)
 - [自动采样性能分析](https://github.com/mosn/holmes)
 - [go 语言位操作库 bitset](https://github.com/bits-and-blooms/bitset)
+- [ecache](https://github.com/orca-zhang/ecache)
+- [json sonic](https://github.com/bytedance/sonic)
 
 ### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)

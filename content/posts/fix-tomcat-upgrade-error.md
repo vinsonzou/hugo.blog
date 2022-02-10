@@ -1,10 +1,13 @@
-+++
-date = "2017-03-27T13:08:25+08:00"
-title = "Tomcat 7.0.76 Invalid character found in the request target"
-description = ""
-tags = ["tomcat"]
+---
+title: "Tomcat 7.0.76 Invalid character found in the request target"
+subtitle: ""
+date: 2017-03-27T13:08:25+08:00
+lastmod: 2017-03-27T13:08:25+08:00
+description: ""
 
-+++
+tags: ["tomcat"]
+categories: ["Troubleshooting"]
+---
 
 **故障现象**
 
