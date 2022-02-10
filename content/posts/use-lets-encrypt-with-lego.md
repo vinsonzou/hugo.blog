@@ -2,7 +2,7 @@
 title: "使用lego申请Let's Encrypt通配符证书"
 subtitle: ""
 date: 2022-01-22T15:20:03+08:00
-lastmod: 2022-01-22T15:20:03+08:00
+lastmod: 2022-02-10T16:30:00+08:00
 description: ""
 
 tags: ["安全"]
@@ -42,4 +42,12 @@ TENCENTCLOUD_SECRET_KEY=your-secret-key \
 lego --email myemail@example.com --dns tencentcloud --domains my.example.org run
 ```
 
+> Ps: 腾讯云相同的key，使用certbot可以申请证书，使用lego就不行，一直报错
+> `acme: error presenting token: tencentcloud: create record failed: [TencentCloudSDKError] Code=InvalidParameter.DomainInvalid, Message=域名不正确，请输入主域名，如 dnspod.cn。, RequestId=96b61fd1-a225-4455-821f-63101f59a117`
+> 无奈腾讯云域名就只能使用dnspod token来使用lego了。
+
 更多DNS厂商使用案例，请参考[官网](https://go-acme.github.io/lego/dns/)
+
+## 更新记录
+
+- 2022-02-10: 更新腾讯云DNS插件无法使用，用DNSPOD插件替代解决
