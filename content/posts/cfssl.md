@@ -163,7 +163,10 @@ cat ca-csr.json
       "O": "ops",
       "OU": "System"
     }
-  ]
+  ],
+  "ca": {
+      "expiry": "87600h"
+  }
 }
 ```
 
@@ -176,6 +179,8 @@ cat ca-csr.json
     - L: Locality，地区，城市
     - O: Organization Name，组织名称，公司名称(在k8s中常用于指定Group，进行RBAC绑定)
     - OU: Organization Unit Name，组织单位名称，公司部门
+- ca: ca属性
+    - expiry: CA证书有效期调整为10年（默认为5年）
 
 ### 3.3 生成CA证书和私钥
 
