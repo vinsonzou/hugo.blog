@@ -95,9 +95,8 @@ description = ""
 - [⭐️viper](https://github.com/spf13/viper)
 - [屏蔽字过滤服务](https://github.com/sunny352/wego)
 - [屏蔽字过滤模块](https://github.com/tal-tech/go-zero/tree/master/core/stringx)
-- [gjson](https://github.com/tidwall/gjson)
 - [gendry](https://github.com/didi/gendry)
-- [⭐️json-iterator](https://github.com/json-iterator/go)
+- [⭐️go-json](https://github.com/goccy/go-json)
 - [⭐️sio](https://github.com/minio/sio)
 - [age](https://github.com/FiloSottile/age)
 - [⭐️cloudflare Go程序平滑重启](https://github.com/cloudflare/tableflip)
@@ -117,6 +116,8 @@ description = ""
 - [go 语言位操作库 bitset](https://github.com/bits-and-blooms/bitset)
 - [ecache](https://github.com/orca-zhang/ecache)
 - [json sonic](https://github.com/bytedance/sonic)
+- [⭐️go excel库](https://github.com/xuri/excelize)
+- [跨平台color库](https://github.com/fatih/color)
 
 ### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
