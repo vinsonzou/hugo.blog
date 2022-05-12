@@ -94,7 +94,7 @@ description = ""
 - [otp](https://github.com/pquerna/otp)
 - [⭐️viper](https://github.com/spf13/viper)
 - [屏蔽字过滤服务](https://github.com/sunny352/wego)
-- [屏蔽字过滤模块](https://github.com/tal-tech/go-zero/tree/master/core/stringx)
+- [屏蔽字过滤模块](https://github.com/zeromicro/go-zero/tree/master/core/stringx)
 - [gendry](https://github.com/didi/gendry)
 - [⭐️go-json](https://github.com/goccy/go-json)
 - [⭐️sio](https://github.com/minio/sio)
@@ -117,7 +117,9 @@ description = ""
 - [ecache](https://github.com/orca-zhang/ecache)
 - [json sonic](https://github.com/bytedance/sonic)
 - [⭐️go excel库](https://github.com/xuri/excelize)
-- [跨平台color库](https://github.com/fatih/color)
+- [⭐️跨平台color库](https://github.com/fatih/color)
+- [用于通过 SSH 运行 Linux 分布式 shell 命令的 Go 包](https://github.com/DiscoRiver/massh)
+- [go cron](https://github.com/tovenja/cron)
 
 ### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
