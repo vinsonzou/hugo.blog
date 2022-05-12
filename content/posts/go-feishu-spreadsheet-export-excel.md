@@ -9,7 +9,8 @@ tags: ["Golang"]
 categories: ["Golang"]
 ---
 
-飞书电子表格网页版有导出Excel功能，但API文档没有此接口，使用excelize流式写入实现demo如下
+飞书电子表格网页版有导出Excel功能，但公布的API文档中没有此接口，目前使用读取单元格数据，
+然后使用excelize流式写入excel，间接实现导出功能。demo如下
 
 ```go
 package main
@@ -88,7 +89,7 @@ func get_tenant_access_token(app_id, app_secret string) (token string) {
 	return token
 }
 
-// 导出电子表格
+// 读取单元格
 // https://open.feishu.cn/document/ukTMukTMukTM/ugTMzUjL4EzM14COxMTN
 func getSpreadsheets(token, spreadsheetToken, sheetId string) {
 	url := "https://open.feishu.cn/open-apis/sheets/v2/spreadsheets/" + spreadsheetToken + "/values/" + sheetId
