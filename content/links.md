@@ -121,6 +121,10 @@ description = ""
 - [用于通过 SSH 运行 Linux 分布式 shell 命令的 Go 包](https://github.com/DiscoRiver/massh)
 - [go cron](https://github.com/tovenja/cron)
 
+### Go开发工具
+- [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
+- [govulncheck](golang.org/x/vuln/cmd/govulncheck@latest)
+
 ### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
 - [Go BitTorrent Tracker](https://github.com/GrappigPanda/notorious)
