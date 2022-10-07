@@ -120,6 +120,7 @@ description = ""
 - [⭐️跨平台color库](https://github.com/fatih/color)
 - [用于通过 SSH 运行 Linux 分布式 shell 命令的 Go 包](https://github.com/DiscoRiver/massh)
 - [go cron](https://github.com/tovenja/cron)
+- [go jwt库,支持最全alg](https://github.com/lestrrat-go/jwx)
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
