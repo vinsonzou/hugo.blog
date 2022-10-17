@@ -1,5 +1,5 @@
 ---
-title: "使用 KubeKey 离线部署 Kubernetes 与 KubeSphere"
+title: "KubeSphere系列一: 使用 KubeKey 离线部署 Kubernetes 与 KubeSphere"
 subtitle: ""
 date: 2022-09-17T12:36:03+08:00
 lastmod: 2022-09-17T12:36:03+08:00
