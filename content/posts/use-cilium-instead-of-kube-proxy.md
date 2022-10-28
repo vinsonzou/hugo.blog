@@ -1,5 +1,5 @@
 ---
-title: "KubeSphere系列二: 使用 KubeKey 离线安装 Cilium 替代 kube-proxy"
+title: "KubeSphere-2: 使用 KubeKey 离线安装 Cilium 替代 kube-proxy"
 subtitle: ""
 date: 2022-10-15T14:24:48+08:00
 lastmod: 2022-10-15T14:24:48+08:00

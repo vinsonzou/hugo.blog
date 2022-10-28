@@ -1,5 +1,5 @@
 ---
-title: "KubeSphere系列一: 使用 KubeKey 离线部署 Kubernetes 与 KubeSphere"
+title: "KubeSphere-1: 使用 KubeKey 离线部署 Kubernetes 与 KubeSphere"
 subtitle: ""
 date: 2022-09-17T12:36:03+08:00
 lastmod: 2022-09-17T12:36:03+08:00
@@ -492,7 +492,13 @@ spec:
 
   将项目设置为**公开**以便所有用户都能够拉取镜像。关于如何创建项目，请参阅[创建项目](https://goharbor.io/docs/2.5.0/working-with-projects/create-projects/)。
 
-### 5. 安装 KubeSphere 集群
+### 5. 推送离线镜像至 Harbor 仓库
+
+```shell
+./kk artifact image push -f config-sample.yaml -a kubesphere-v3.3.1-rc.2-artifact.tar.gz
+```
+
+### 6. 安装 KubeSphere 集群
 
 ```shell
 ./kk create cluster -f config-sample.yaml -a kubesphere-v3.3.1-rc.2-artifact.tar.gz --with-packages
@@ -504,7 +510,7 @@ spec:
 - **kubesphere-v3.3.1-rc.2-artifact.tar.gz**：指制品 artifact打包文件。
 - **--with-packages**：若需要安装操作系统依赖，需指定该选项。
 
-### 6. 查看集群状态
+### 7. 查看集群状态
 
 ```
 kubectl logs -n kubesphere-system $(kubectl get pod -n kubesphere-system -l 'app in (ks-install, ks-installer)' -o jsonpath='{.items[0].metadata.name}') -f
@@ -535,7 +541,7 @@ https://kubesphere.io             2022-09-17 10:40:08
 #####################################################
 ```
 
-### 7. 访问 KubeSphere 控制台
+### 8. 访问 KubeSphere 控制台
 
 通过 `http://{IP}:30880` 使用默认帐户和密码 `admin/P@88w0rd` 
 
