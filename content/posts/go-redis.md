@@ -98,6 +98,14 @@ global.Redis.HGet(c, pathKey, "guid").Result()
 
 // Redis Del示例
 global.Redis.Del(c, guid)
+
+// Redis pipeline用法
+// 如下代码相当于将两个命令一次发给redis server执行，使用Pipeline能减少一次RTT。
+pipe := global.Redis.Pipeline()
+pipe.Del(c, guid)
+pipe.Del(c, pathKey)
+ret, err := pipe.Exec(c)
+fmt.Println(ret, err)
 ```
 
 现在就用到Redis常用功能，更多用法移步[Github](https://github.com/go-redis/redis)
