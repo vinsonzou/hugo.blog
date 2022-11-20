@@ -84,7 +84,7 @@ export KKZONE=cn
 ./kk artifact export -m k8s-v1.25.4-upgrade-manifest.yaml -o k8s-v1.25.4-upgrade-artifact.tar.gz
 ```
 
-> 青云国内未及时同步最新kubelet，导致kk命令无法下载，此处手动下载kubelet 1.24
+> 青云国内未及时同步最新kubelet，导致kk命令无法下载，此处手动下载kubelet 1.25.4
 > - curl -L -o /app/k8s/kk-3.0.1/kubekey/artifact/kube/v1.25.4/amd64/kubelet https://dl.k8s.io/v1.25.4/bin/linux/amd64/kubelet
 
 ## 离线升级
