@@ -54,8 +54,6 @@ helm upgrade apisix \
   apisix-0.12.3.tgz
 ```
 
-> 升级后变化: apisix configMap被重置了
-
 ### 2.2 dashboard更新
 
 ```shell
