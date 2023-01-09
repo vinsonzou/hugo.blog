@@ -30,7 +30,7 @@ categories: ["Kubernetes","APISIX"]
 ### 2.1 APISIX及ingress-controller更新
 
 ```shell
-helm install apisix \
+helm upgrade apisix \
   --namespace ingress-apisix \
   --create-namespace \
   --set global.imageRegistry=dockerhub.kubekey.local \
