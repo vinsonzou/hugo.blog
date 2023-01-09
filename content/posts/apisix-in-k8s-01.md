@@ -29,87 +29,36 @@ categories: ["Kubernetes","APISIX"]
 
 ## 2、安装
 
-### 2.1 APISIX安装
+### 2.1 APISIX及ingress-controller安装
 
 ```shell
 helm install apisix \
-	--namespace ingress-apisix \
-	--create-namespace \
-	--set global.imageRegistry=dockerhub.kubekey.local \
-	--set etcd.image.repository=3rd/etcd \
-	--set apisix.image.repository=dockerhub.kubekey.local/3rd/apisix \
-	--set initContainer.image=dockerhub.kubekey.local/library/busybox \
-	--set gateway.type=LoadBalancer \
-	--set gateway.annotations."eip\.openelb\.kubesphere\.io/v1alpha2"=eip-layer2-pool \
-	--set gateway.annotations."lb\.kubesphere\.io/v1alpha1"=openelb \
-	--set gateway.annotations."protocol\.openelb\.kubesphere\.io/v1alpha1"=layer2 \
-	--set gateway.stream.enabled=true \
-	--set ingressPublishService="ingress-apisix/apisix-gateway" \
-	--set admin.allow.ipList.1="127.0.0.1/24" \
-	--set admin.allow.ipList.2="10.233.64.0/18" \
-	apisix-0.11.1.tgz
+  --namespace ingress-apisix \
+  --create-namespace \
+  --set global.imageRegistry=dockerhub.kubekey.local \
+  --set etcd.image.repository=3rd/etcd \
+  --set apisix.image.repository=dockerhub.kubekey.local/3rd/apisix \
+  --set initContainer.image=dockerhub.kubekey.local/library/busybox \
+  --set gateway.type=LoadBalancer \
+  --set gateway.annotations."eip\.openelb\.kubesphere\.io/v1alpha2"=eip-layer2-pool \
+  --set gateway.annotations."lb\.kubesphere\.io/v1alpha1"=openelb \
+  --set gateway.annotations."protocol\.openelb\.kubesphere\.io/v1alpha1"=layer2 \
+  --set gateway.stream.enabled=true \
+  --set ingressPublishService="ingress-apisix/apisix-gateway" \
+  --set admin.allow.ipList.1="127.0.0.1/24" \
+  --set admin.allow.ipList.2="10.233.64.0/18" \
+  --set ingress-controller.enabled=true \
+  --set ingress-controller.image.repository=dockerhub.kubekey.local/3rd/apisix-ingress-controller \
+  --set ingress-controller.initContainer.image=dockerhub.kubekey.local/library/busybox \
+  --set ingress-controller.config.apisix.serviceNamespace=ingress-apisix \
+  apisix-0.11.1.tgz
 ```
 
 > Ps:
 >
 > - 未开启stream_route功能: 需手动修改apisix的configmap，添加端口监听
->
-> - 当前版本暂不支持同时安装`ingress-controller`和`dashboard`，即如下参数
->
->   ```
->   --set apisix-ingress-controller.image.repository=dockerhub.kubekey.local/3rd/apisix-ingress-controller \
->   --set apisix-ingress-controller.initContainer.image=dockerhub.kubekey.local/library/busybox \
->   --set apisix-dashboard.image.repository=dockerhub.kubekey.local/3rd/apisix-dashboard:2.13-alpine \
->   --set dashboard.enabled=true \
->   --set ingress-controller.enabled=true \
->   ```
 
-返回如下，表示安装成功。
-
-```
-NAME: apisix
-LAST DEPLOYED: Tue Oct 11 19:29:58 2022
-NAMESPACE: ingress-apisix
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-NOTES:
-1. Get the application URL by running these commands:
-     NOTE: It may take a few minutes for the LoadBalancer IP to be available.
-           You can watch the status of by running 'kubectl get --namespace ingress-apisix svc -w apisix-gateway'
-  export SERVICE_IP=$(kubectl get svc --namespace ingress-apisix apisix-gateway --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
-  echo http://$SERVICE_IP:80
-```
-
-### 2.2 ingress-controller安装
-
-```shell
-helm install apisix-ingress-controller \
-	--namespace ingress-apisix \
-	--create-namespace \
-	--set image.repository=dockerhub.kubekey.local/3rd/apisix-ingress-controller \
-	--set initContainer.image=dockerhub.kubekey.local/library/busybox \
-	apisix-ingress-controller-0.10.1.tgz
-```
-
-返回如下，表示安装成功。
-
-```
-NAME: apisix-ingress-controller
-LAST DEPLOYED: Tue Oct 11 19:32:28 2022
-NAMESPACE: ingress-apisix
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-NOTES:
-Get the application URL by running these commands:
-export POD_NAME=$(kubectl get pods --namespace ingress-apisix -l "app.kubernetes.io/name=apisix-ingress-controller,app.kubernetes.io/instance=apisix-ingress-controller" -o jsonpath="{.items[0].metadata.name}")
-export CONTAINER_PORT=$(kubectl get pod --namespace ingress-apisix $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
-echo "Visit http://127.0.0.1:8080 to use your application"
-kubectl --namespace ingress-apisix port-forward $POD_NAME 8080:$CONTAINER_PORT
-```
-
-### 2.3 dashboard安装
+### 2.2 dashboard安装
 
 ```shell
 helm install apisix-dashboard \
@@ -118,22 +67,6 @@ helm install apisix-dashboard \
 	--set image.repository=dockerhub.kubekey.local/3rd/apisix-dashboard \
 	--set config.conf.etcd.endpoints.1=apisix-etcd.ingress-apisix.svc.cluster.local:2379 \
 	apisix-dashboard-0.6.0.tgz
-```
-
-返回如下，表示安装成功。
-
-```
-NAME: apisix-dashboard
-LAST DEPLOYED: Tue Oct 11 20:51:13 2022
-NAMESPACE: ingress-apisix
-STATUS: deployed
-REVISION: 1
-NOTES:
-1. Get the application URL by running these commands:
-  export POD_NAME=$(kubectl get pods --namespace ingress-apisix -l "app.kubernetes.io/name=apisix-dashboard,app.kubernetes.io/instance=apisix-dashboard" -o jsonpath="{.items[0].metadata.name}")
-  export CONTAINER_PORT=$(kubectl get pod --namespace ingress-apisix $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
-  echo "Visit http://127.0.0.1:8080 to use your application"
-  kubectl --namespace ingress-apisix port-forward $POD_NAME 8080:$CONTAINER_PORT
 ```
 
 ## 3、APISIX配置
