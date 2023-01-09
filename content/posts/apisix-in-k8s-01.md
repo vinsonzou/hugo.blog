@@ -20,7 +20,7 @@ categories: ["Kubernetes","APISIX"]
     - etcd: 3.5.4
   - APISIX ingress-controller: 0.10.1
   - APISIX Dashboard: 0.6.0
-  - 关联镜像
+  - 关联镜像`ps: 需在执行helm安装前，导入至离线镜像中心`
     - apache/apisix:2.15.0-alpine
     - bitnami/etcd:3.5.4-debian-11-r14
     - apache/apisix-ingress-controller:1.5.0
@@ -139,8 +139,32 @@ NOTES:
 ## 3、APISIX配置
 
 - 开启stream_proxy功能，并监听端口
+  `修改apisix的ConfigMap，开启stream_proxy功能`
+
+  ```
+  apisix:
+    ...
+    stream_proxy:       # TCP/UDP proxy
+      only: false
+      tcp:              # TCP proxy port list
+        - 8201
+        - 8202
+      udp:              # UDP proxy port list
+        - 8201
+        - 8202
+  ```
+
   - 同时配置`k8s Service`之`apisix-gateway`的端口监听
+    - 发布tcp/udp 8201,8202对外
 - 开启插件server-info
+  ```
+  ...
+  plugin:
+    ...
+    - server-info
+  ```
+
+> ps: 修改ConfigMap后，记得更新apisix deployment，否则配置不会生效。
 
 ### 3.1 http转发配置
 
@@ -156,7 +180,7 @@ NOTES:
     namespace: ingress-apisix
   spec:
     http:
-      - name: root 
+      - name: root
         match:
           hosts:
             - apisix.test.com
@@ -203,7 +227,7 @@ NOTES:
         match:
           ingressPort: 8201
         backend:
-          serviceName: gateway   # 对应k8s的serverName
+          serviceName: gateway   # 对应k8s的serviceName
           servicePort: 8100
   ```
 

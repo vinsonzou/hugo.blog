@@ -122,6 +122,7 @@ description = ""
 - [go cron](https://github.com/tovenja/cron)
 - [go jwt库,支持最全alg](https://github.com/lestrrat-go/jwx)
 - [go双端队列 deque](https://github.com/edwingeng/deque/tree/master/v2)
+- [conc: Better structured concurrency for go](https://github.com/sourcegraph/conc)
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
@@ -157,6 +158,8 @@ description = ""
 ### 安全工具
 
 - [trivy](https://github.com/aquasecurity/trivy)
+- [osv-scanner](https://github.com/google/osv-scanner)
+- [govulncheck](golang.org/x/vuln/cmd/govulncheck@latest)
 
 ### 命令行工具集
 
