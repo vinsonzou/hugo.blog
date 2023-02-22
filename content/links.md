@@ -115,7 +115,7 @@ description = ""
 - [自动采样性能分析](https://github.com/mosn/holmes)
 - [go 语言位操作库 bitset](https://github.com/bits-and-blooms/bitset)
 - [ecache](https://github.com/orca-zhang/ecache)
-- [json sonic](https://github.com/bytedance/sonic)
+- [⭐️json sonic](https://github.com/bytedance/sonic)
 - [⭐️go excel库](https://github.com/xuri/excelize)
 - [⭐️跨平台color库](https://github.com/fatih/color)
 - [用于通过 SSH 运行 Linux 分布式 shell 命令的 Go 包](https://github.com/DiscoRiver/massh)
@@ -123,6 +123,9 @@ description = ""
 - [go jwt库,支持最全alg](https://github.com/lestrrat-go/jwx)
 - [go双端队列 deque](https://github.com/edwingeng/deque/tree/master/v2)
 - [conc: Better structured concurrency for go](https://github.com/sourcegraph/conc)
+- [go websocket库](https://github.com/lxzan/gws)
+- [⭐️sha256-simd](https://github.com/minio/sha256-simd)
+- [⭐️BLAKE3](github.com/zeebo/blake3)
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
