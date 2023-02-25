@@ -129,7 +129,6 @@ description = ""
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
-- [govulncheck](golang.org/x/vuln/cmd/govulncheck@latest)
 
 ### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
@@ -162,7 +161,7 @@ description = ""
 
 - [trivy](https://github.com/aquasecurity/trivy)
 - [osv-scanner](https://github.com/google/osv-scanner)
-- [govulncheck](golang.org/x/vuln/cmd/govulncheck@latest)
+- [govulncheck](https://golang.org/x/vuln/cmd/govulncheck@latest)
 
 ### 命令行工具集
 
