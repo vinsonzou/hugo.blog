@@ -2,7 +2,7 @@
 title: "[Go] redis库使用"
 subtitle: ""
 date: 2022-10-18T17:11:03+08:00
-lastmod: 2022-10-18T17:11:03+08:00
+lastmod: 2023-02-25T14:10:00+08:00
 description: ""
 
 tags: ["Golang"]
@@ -11,7 +11,7 @@ categories: ["Golang"]
 
 ## 环境
 
-- redis库：github.com/go-redis/redis/v8
+- redis库：github.com/redis/go-redis/v9
 
 ## 需求
 
@@ -32,7 +32,7 @@ redis键设计
 package global
 
 import (
-	"github.com/go-redis/redis/v8"
+	"github.com/redis/go-redis/v9"
 )
 
 var (
@@ -108,4 +108,8 @@ ret, err := pipe.Exec(c)
 fmt.Println(ret, err)
 ```
 
-现在就用到Redis常用功能，更多用法移步[Github](https://github.com/go-redis/redis)
+现在就用到Redis常用功能，更多用法移步[Github](https://github.com/redis/go-redis)
+
+|更新日期|说明|
+|:-:|:-:|
+|2023-02-25|切换至v9，[Go-Redis 现已成为官方 Redis 客户端](https://redis.com/blog/go-redis-official-redis-client/)|
