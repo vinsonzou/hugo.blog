@@ -171,6 +171,7 @@ description = ""
 - [BLAKE3 b3sum](https://github.com/BLAKE3-team/BLAKE3)
 - [⭐️Minisign](https://github.com/jedisct1/minisign)
 - [plow 高性能图形化压测工具](https://github.com/six-ddc/plow)
+- [gt-checksum 静态数据库校验修复工具](https://gitee.com/GreatSQL/gt-checksum)
 
 ### eBPF
 
