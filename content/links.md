@@ -88,7 +88,6 @@ description = ""
 
 ### Go Web开发
 - [Gin](https://github.com/gin-gonic/gin)
-- [fiber](https://github.com/gofiber/fiber)
 
 ### Go常用模块
 - [otp](https://github.com/pquerna/otp)
@@ -97,6 +96,7 @@ description = ""
 - [屏蔽字过滤模块](https://github.com/zeromicro/go-zero/tree/master/core/stringx)
 - [gendry](https://github.com/didi/gendry)
 - [⭐️go-json](https://github.com/goccy/go-json)
+- [⭐️json sonic](https://github.com/bytedance/sonic)
 - [⭐️sio](https://github.com/minio/sio)
 - [age](https://github.com/FiloSottile/age)
 - [⭐️cloudflare Go程序平滑重启](https://github.com/cloudflare/tableflip)
@@ -107,7 +107,6 @@ description = ""
 - [go-attr](https://github.com/ssrathi/go-attr)
 - [gopacket](https://github.com/google/gopacket)
 - [gin-cache](https://github.com/chenyahui/gin-cache)
-- [Go Kafka客户端](https://github.com/Shopify/sarama)
 - [速度最快的 base64 库](https://github.com/cristalhq/base64)
 - [go-quartz](https://github.com/reugn/go-quartz)
 - [goRequest](https://github.com/parnurzeal/gorequest)
@@ -115,7 +114,6 @@ description = ""
 - [自动采样性能分析](https://github.com/mosn/holmes)
 - [go 语言位操作库 bitset](https://github.com/bits-and-blooms/bitset)
 - [ecache](https://github.com/orca-zhang/ecache)
-- [⭐️json sonic](https://github.com/bytedance/sonic)
 - [⭐️go excel库](https://github.com/xuri/excelize)
 - [⭐️跨平台color库](https://github.com/fatih/color)
 - [用于通过 SSH 运行 Linux 分布式 shell 命令的 Go 包](https://github.com/DiscoRiver/massh)
@@ -156,6 +154,7 @@ description = ""
 - [Element UI表单设计及代码生成器](https://github.com/JakHuang/form-generator)
 - [jsPolicy - Easier & Faster Kubernetes Policies](https://github.com/loft-sh/jspolicy)
 - [云基准压测工具](https://github.com/cloud-bulldozer/benchmark-operator)
+- [⭐️代码生成拓扑图工具](https://github.com/mingrammer/diagrams)
 
 ### 安全工具
 
