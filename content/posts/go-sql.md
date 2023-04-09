@@ -180,7 +180,10 @@ func selectDataById(id int) (string, error) {
 }
 ```
 
-> 注意：在QueryRow后要调用Scan方法，不然数据库连接不会被释放
+> 注意
+>
+> - 在QueryRow后要调用Scan方法，不然数据库连接不会被释放
+> - 这里有个特殊情况要注意，对于那种没有返回结果的SQL语句，千万不要使用Query方法去执行，这会导致无法回收连接，这时候推荐使用Exec方法去执行。
 
 #### 多行查询
 
@@ -208,7 +211,7 @@ func selectManyData(id int) {
 }
 ```
 
-> 查询多行数据必须调用Close()方法来释放数据库连接
+> 查询多行数据必须调用`Close()`方法来释放数据库连接
 
 #### IN查询
 
@@ -767,3 +770,25 @@ func transaction() {
 | SQLite     | `?` 和`$1`   |
 | Oracle     | `:name`      |
 
+### 多数据库连接池管理
+
+因业务场景比较特殊，系统中有多个数据库，要根据不同参数去连不同数据库，使用map实现连接池动态管理
+
+```go
+var dbMap map[string]*sql.DB
+
+func GetDbContext(dbName string) *sql.DB {
+	if dbMap == nil {
+		dbMap = make(map[string]*sql.DB)
+	}
+
+	if db, ok := dbMap[dbName]; ok {
+		return db
+	} else {
+		dsn := "demo:pass@tcp(127.0.0.1:3306)/" + dbName
+		db, _ := sql.Open("mysql", dsn)
+		dbMap[dbName] = db
+		return db
+	}
+}
+```
