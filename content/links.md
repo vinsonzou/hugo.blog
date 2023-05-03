@@ -127,6 +127,7 @@ description = ""
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
+- [sqlc](https://github.com/kyleconroy/sqlc)
 
 ### Tools
 - [Go BitTorrent Tracker, Facebook/CoreOS used](https://github.com/chihaya/chihaya)
@@ -167,6 +168,7 @@ description = ""
 - [⭐️zstd](https://github.com/facebook/zstd)
 - [⭐️A native go client for HDFS](https://github.com/colinmarc/hdfs)
 - [rust cp](https://github.com/Svetlitski/fcp)
+- [rust fd](https://github.com/sharkdp/fd)
 - [BLAKE3 b3sum](https://github.com/BLAKE3-team/BLAKE3)
 - [⭐️Minisign](https://github.com/jedisct1/minisign)
 - [plow 高性能图形化压测工具](https://github.com/six-ddc/plow)
