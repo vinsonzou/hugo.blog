@@ -174,6 +174,7 @@ description = ""
 - [plow 高性能图形化压测工具](https://github.com/six-ddc/plow)
 - [gt-checksum 静态数据库校验修复工具](https://gitee.com/GreatSQL/gt-checksum)
 
-### eBPF
-
+### k8s相关组件
 - [merbridge](https://github.com/merbridge/merbridge)
+- [OpenKruise](https://github.com/openkruise/kruise)
+    - [kruise-game](https://github.com/openkruise/kruise-game)
