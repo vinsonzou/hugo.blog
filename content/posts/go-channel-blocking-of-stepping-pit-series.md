@@ -68,6 +68,7 @@ func main() {
 [RangeClause](https://go.dev/ref/spec#RangeClause)
 
 > For channels, the iteration values produced are the successive values sent on the channel `until the channel is closed`. If the channel is nil, the range expression blocks forever.
+> 
 > 使用 for range channel 时，只有 channel 被关掉才会结束。
 
 ## 解决
