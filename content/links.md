@@ -124,6 +124,7 @@ description = ""
 - [go websocket库](https://github.com/lxzan/gws)
 - [⭐️sha256-simd](https://github.com/minio/sha256-simd)
 - [⭐️BLAKE3](github.com/zeebo/blake3)
+- [⭐️BadgerDB: Fast key-value DB in Go](https://github.com/dgraph-io/badger)
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
