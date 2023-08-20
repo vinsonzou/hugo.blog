@@ -1,10 +1,11 @@
-+++
-date = "2016-06-16T12:33:10+08:00"
-description = ""
-tags = ["git"]
-title = "Git常用命令备忘"
+---
+title: "Git常用命令备忘"
+date: 2016-06-16T12:33:10+08:00
+lastmod: 2023-08-20T13:18:00+08:00
+description: ""
 
-+++
+tags: ["git"]
+---
 
 # 配置
 
@@ -178,4 +179,17 @@ git push origin 分支名称：分支名称 -f
 ### 10. 使用signed-off-by
 ```sh
 git commit -s -m 'commit msg'
+```
+
+### 11. 分支相关操作
+```sh
+# 显示当前分支
+git branch --show-current  # Git >= 2.22
+
+# 新建分支
+git branch v0.0.0.1
+
+# 切换分支
+git checkout v0.0.0.1
+git switch v0.0.0.1  # Git >= 2.23
 ```
