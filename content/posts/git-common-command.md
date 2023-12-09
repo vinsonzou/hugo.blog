@@ -1,7 +1,7 @@
 ---
 title: "Git常用命令备忘"
 date: 2016-06-16T12:33:10+08:00
-lastmod: 2023-08-20T13:18:00+08:00
+lastmod: 2023-12-09T09:48:00+08:00
 description: ""
 
 tags: ["git"]
@@ -192,4 +192,15 @@ git branch v0.0.0.1
 # 切换分支
 git checkout v0.0.0.1
 git switch v0.0.0.1  # Git >= 2.23
+```
+
+### 12. 合并一个分支上某一次的修改到另一个分支上
+把a分支的`b5ceeba22213bd05e32f305d79b21fb6048ef840`提交合并至b分支
+
+```sh
+# 切换至b分支
+git switch b  # Git >= 2.23
+
+git cherry-pick b5ceeba22213bd05e32f305d79b21fb6048ef840
+git push
 ```
