@@ -128,6 +128,7 @@ description = ""
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
+- [nilaway](https://github.com/uber-go/nilaway)
 - [sqlc](https://github.com/kyleconroy/sqlc)
 
 ### Tools
