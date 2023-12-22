@@ -25,6 +25,7 @@ description = ""
 - [⭐️parsel](https://github.com/scrapy/parsel)
 - [flashtext](https://github.com/vi3k6i5/flashtext)
 - [pyinotify](https://github.com/seb-m/pyinotify)
+- [⭐️OpenCC简繁体转换](https://github.com/BYVoid/OpenCC)
 
 ### Python Web开发
 - [Flask](https://github.com/pallets/flask)
@@ -125,6 +126,7 @@ description = ""
 - [⭐️sha256-simd](https://github.com/minio/sha256-simd)
 - [⭐️BLAKE3](github.com/zeebo/blake3)
 - [⭐️BadgerDB: Fast key-value DB in Go](https://github.com/dgraph-io/badger)
+- [⭐️OpenCC简繁体转换](https://github.com/longbridgeapp/opencc)
 
 ### Go开发工具
 - [fieldalignment go struct排序节省内存](https://golang.org/x/tools/go/analysis/passes/fieldalignment/cmd/fieldalignment@latest)
